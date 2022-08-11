@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Tabeller med overskriftsceller</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Tabeller med overskriftsceller</div></td>
+	</tr>
+	</table>
+	
+	&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			I dette eksempelet blir bildefilene under brukt. Høyreklikk på bildene og velg &quot;Lagre bilde som...&quot; for
+			å bruke disse hvis du følger eksempelet ved å skrive kode selv.<br>
+			<ul>bakgrunn_overskrift.jpg:&nbsp;&nbsp;&nbsp;&nbsp;<img src="bakgrunn_overskrift.jpg" width="163" height="3"><br>
+			    smiley.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="smiley.gif"><br>
+			</ul>
+			</div>
+			
+			&nbsp;<br>
+			
+			<div class="tekst">
+			Vi begynner med å lage en tabell med fargen til rammen som bakgrunnsfarge. Inni denne tabellen skal vi lage flere 
+			andre nøstede tabeller. Denne tabellen skal kun ha én celle, selv om det ser ut som den har flere.<br>
+			Her er koden til den ytre tabellen.
+			</div>
+			<div class="kode">
+			<ul><font color="#ff0000">
+			&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="160"&gt;&lt;tr&gt;&lt;td&gt;<br><br>
+			
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</font>
+			</ul>
+			</div>
+			<center>
+			<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="160" height="20"><tr><td>
+			</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			Egenskapen <span class="kode">cellpadding="1"</span> gjør at innholdet i cellene til denne tabellen blir laget 
+			1 pixel fra kanten, fra alle fire sider. Det er dette som ser ut som en ramme på den ferdige tabellen. Vi har nå 
+			en blå tom tabell.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Vi skal nå lage tabellen som deler opp det hele i overskrift og innhold. Vi lager tre celler i den nye tabellen, 
+			og setter en bakgrunnsfarge til innholdsdelen av tabellen.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="160"&gt;&lt;tr&gt;&lt;td&gt;<br><font color="#ff0000">
+			&lt;table cellpadding="0" cellspacing="0" border="0" width="100%"&gt;<br>
+			&lt;tr&gt;<br>
+			<ul>
+			&lt;td&gt;<br>
+			&lt;/td&gt;<br>
+			</ul>
+			&lt;/tr&gt;<br>
+			&lt;tr&gt;&lt;td height="1"&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+			&lt;tr&gt;<br>
+			<ul>
+			&lt;td bgcolor="#D1E1F1"&gt;<br>
+			&lt;/td&gt;<br>
+			</ul>
+			&lt;/tr&gt;<br>
+			&lt;/table&gt;<br></font>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul>
+			</div>
+			<center>
+			<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="160"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td height="20">
+				</td>
+			</tr>
+			<tr><td height="1"></td></tr>
+			<tr>
+				<td height="20" bgcolor="#D1E1F1">
+				</td>
+			</tr>		
+			</table>
+			</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			Vi har satt inn 3 celler i tabellen, der den midterste cellen har fått en høyde på 1 pixel. Dette er 
+			linjen som skiller overskriftscellen fra innholdscellen. Denne linjen er ikke synlig ennå, fordi 
+			overskriftscellen har samme farge som linjen.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Til slutt setter vi inn innholdet i overskriftscellen og innholdscellen. Jeg har her valgt å sette inn en tabell 
+			i overskriftscellen for å vise hvordan man kan organisere innholdet i disse cellene akkurat slik man vil ha det. 
+			Innholdet i innholdscellen er kun ren tekst. Dette er selvfølgelig også mulig.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="160"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table cellpadding="0" cellspacing="0" border="0" width="100%"&gt;<br>
+			&lt;tr&gt;<br>
+			<ul>
+			&lt;td&gt;<font color="#ff0000">&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br></font>
+			<ul><font color="#ff0000">
+				&lt;td&gt;Overskrift&lt;/td&gt;<br>
+				&lt;td&gt;&lt;img src="smiley.gif" align="right" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</font></ul>	
+			&lt;/td&gt;<br>
+			</ul>
+			&lt;/tr&gt;<br>
+			&lt;tr&gt;&lt;td height="1"&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+			&lt;tr&gt;<br>
+			<ul>
+			&lt;td bgcolor="#D1E1F1"&gt;<br>
+			<font color="#ff0000">
+			&nbsp;&nbsp;&nbsp;Element 1&lt;br&gt;<br>
+			&nbsp;&nbsp;&nbsp;Element 2&lt;br&gt;<br>
+			&nbsp;&nbsp;&nbsp;Element 3&lt;br&gt;<br>
+			</font>
+			&lt;/td&gt;<br>
+			</ul>
+			&lt;/tr&gt;<br>
+			&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul>
+			</div>						
+			<center>
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="160"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td><table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"><tr>
+			   		<td><span class="meny">Overskrift</span></td>
+			   		<td><img src="smiley.gif" align="right" width="12" height="12"></td></tr></table>
+				</td>
+			</tr>
+			<tr><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1">
+				<td>
+				&nbsp;&nbsp;&nbsp;<a href="#" target="hoved" class="menyvalg">Element 1</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="#" target="hoved" class="menyvalg">Element 2</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="#" target="hoved" class="menyvalg">Element 3</a><br>
+				</td>
+			</tr>
+			</table>
+			</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			Nå vil det være en god fortsettelse å lese eksemplene under DHTML for å lære hvordan man kan benytte 
+			dynamisk HTML for å skape liv i denne tabellen.
+			</div>	   
+
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

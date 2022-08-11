@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk tabellbakgrunn</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+	
+	<script language="JavaScript">
+	function belys(valg, on_off) {
+		if(on_off == "on") {
+			document.all[valg].style.backgroundColor="#8EB4DA";
+		}
+		else if(on_off == "off") {
+			document.all[valg].style.backgroundColor="#3870A8";
+		}
+	}
+	</script>
+	
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk tabellbakgrunn</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<a href="dynamisk_tabellbakgrunn.html" target="hoved">del 1</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tabellbakgrunn_2.html" target="hoved">del 2</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<span class="underoverskrift">del 3</span>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			Vi skal nå skrive HTML-koden som mottar hendelsene fra musa, og kaller på funksjonen belys. Vi bruker link-taggene 
+			fra del 1 til dette, og legger til hendelsene <span class="kode">onMouseOver</span> og <span class="kode">onMouseOut</span>. 
+			Legg merke til at det første argumentet som sendes til funksjonen tilsvarer <span class="kode">id</span> til cellene 
+			i tabellen.
+			</div>
+			<div class="kode">
+			<ul>
+			  	&lt;td align="center" id="epost"&gt;<br>
+			  	  	<ul>&lt;a href="mailto:eloekset@online.no" <font color="#ff0000">onMouseOver="belys('epost', 'on')" onMouseOut="belys('epost', 'off')"</font>&gt;&lt;img src="epost.gif" width="31" height="29" border="0"&gt;&lt;/a&gt;<br></ul>
+			  	&lt;/td&gt;<br>
+			  	&lt;td align="center" id="les"&gt;<br>
+			  	  	<ul>&lt;a href="gjestebok_les.html" <font color="#ff0000">onMouseOver="belys('les', 'on')" onMouseOut="belys('les', 'off')"</font>&gt;&lt;img src="gjestebok_les.gif" width="32" height="27" border="0"&gt;&lt;/a&gt;<br></ul>
+			  	&lt;/td&gt;<br>
+			  	&lt;td align="center" id="skriv"&gt;<br>
+			  	  	<ul>&lt;a href="gjestebok_skriv.html" <font color="#ff0000">onMouseOver="belys('skriv', 'on')" onMouseOut="belys('skriv', 'off')"</font>&gt;&lt;img src="gjestebok_skriv.gif" width="32" height="32" border="0"&gt;&lt;/a&gt;<br></ul>
+			  	&lt;/td&gt;<br>
+			</ul>
+			</div>
+			<center>
+			<table width="200" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   		<table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+				<table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+			  		<tr>
+			  		<td align="center" id="epost">
+			  	  		<a href="mailto:eloekset@online.no" onMouseOver="belys('epost', 'on')" onMouseOut="belys('epost', 'off')"><img src="epost.gif" width="31" height="29" border="0"></a>
+			  		</td>
+			  		<td align="center" id="les">
+			  	  		<a href="gjestebok_les.html" onMouseOver="belys('les', 'on')" onMouseOut="belys('les', 'off')"><img src="gjestebok_les.gif" width="32" height="27" border="0"></a>
+			  		</td>
+			  		<td align="center" id="skriv">
+			  	  		<a href="gjestebok_skriv.html" onMouseOver="belys('skriv', 'on')" onMouseOut="belys('skriv', 'off')"><img src="gjestebok_skriv.gif" width="32" height="32" border="0"></a>
+			  		</td>
+			  		</tr>
+			  	</table>
+	   		</td></tr></table>
+			</td></tr></table>
+			</td></tr></table>
+			</center>	
+			
+			
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

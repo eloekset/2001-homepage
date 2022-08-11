@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk tabellbakgrunn</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk tabellbakgrunn</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<a href="dynamisk_tabellbakgrunn.html" target="hoved">del 1</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<span class="underoverskrift">del 2</span>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tabellbakgrunn_3.html" target="hoved">del 3</a>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			Vi skal nå lage et javascript med en funksjon "belys" som skal endre på egenskapene til cellene i tabellen 
+			som vi laget i del 1. Javascriptet skal plasseres øverst i HTML-filen innenfor head-taggen.
+			</div>
+			<div class="kode"><font color="#ff0000">
+			<ul>
+			&lt;html&gt;<br>
+			&lt;head&gt;<br><br>
+					<ul>&lt;script language="JavaScript"&gt;<br><br>
+					&lt;/script&gt;<br><br></ul>
+			&lt;/head&gt;<br><br></font>
+			...<br><br><font color="#ff0000">
+			&lt;/html&gt;
+			</ul></font>
+			</div>
+
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Først i javascriptet skal vi lage funksjonen belys. Denne funksjonen skal kalles når man peker på og tar bort 
+			musa fra et av bildene i tabellen. Funksjonen skal ta to argumenter, et som sier hvilket objekt som skal 
+			forandres, og et som forteller om bakgrunnsfargen skal være mørk eller lys (dvs på eller av).
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;script language="JavaScript"&gt;<br><font color="#ff0000">
+			function belys (valg, on_off) { <br>
+			
+			<br>}<br></font>
+			&lt;/script&gt;
+			</ul>
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			For å finne ut om belysningen skal slås på eller av bruker vi en if-setning som spør på innholdet til 
+			argumentet <span class="kode">on_off</span>. Vi bestemmer oss her for at "on" som argument skal bety 
+			at belysningen slås på, og "off" at belysningen skal slås av. 
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;script language="JavaScript"&gt;<br>
+			function belys (valg, on_off) { <br><br><font color="#ff0000">
+			<ul>
+				if(on_off == "on") {<br><br>
+				
+				}<br>
+				if(on_off == "off") {<br><br>
+				
+				}<br>
+			</ul>
+			</font>}<br>
+			&lt;/script&gt;
+			</ul>
+			</div>
+
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Nå gjenstår bare koden som forandrer på egenskapen <span class="kode">backgroundColor</span> 
+			til objektene. Vi bruker argumentet <span class="kode">valg</span> til å styre hvilket objekt som forandres.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;script language="JavaScript"&gt;<br>
+			function belys (valg, on_off) { <br><br>
+			<ul>
+				if(on_off == "on") {<br><font color="#ff0000">
+				<ul>
+					document.all[valg].style.backgroundColor="#8EB4DA";
+				</ul>
+				</font>}<br>
+				if(on_off == "off") {<br><font color="#ff0000">
+				<ul>
+					document.all[valg].style.backgroundColor="#3870A8";
+				</ul>
+				</font>}<br>
+			</ul>
+			}<br>
+			&lt;/script&gt;
+			</ul>
+			<div>
+			<div class="tekst">
+			Dette er alt som skal til av javascript. Nå gjenstår å lage HTML-koden som mottar hendelser fra musa og kaller 
+			denne funksjonen med rett argument. Les mer om dette i del 3.
+			<p align="right"><a href="dynamisk_tabellbakgrunn_3.html" target="hoved">-&gt;del 3</a></p>
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

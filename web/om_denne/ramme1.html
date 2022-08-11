@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Innramming av celler</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Innramming av celler</div></td>
+	</tr>
+	</table>
+	
+	&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			
+			<div class="tekst">
+			Det hele er basert på at man bruker tabeller inni tabeller for å lage ramme rundt det som oppfattes 
+			som cellene i én tabell. Istedet for å bruke border-egenskapen til en tabell bruker man altså en annen
+			tabell &quot;utenpå&quot; tabellen.<br>
+			Vi starter med en tabell som har bakgrunnsfargen til siden.
+			</div>
+			<div class="kode"> 
+			<ul><font color="#ff0000">
+			&lt;table bgcolor="#3870A8" width="160" border="0" cellpadding="0" cellspacing="2"&gt;&lt;tr&gt;&lt;td&gt;<br><br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</font>
+			</ul>
+			</div>
+			<center>
+			<table bgcolor="#3870A8" width="160" height="20" border="0" cellpadding="0" cellspacing="2"><tr><td>
+			</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			Dette gir bare en liten blå firkant uten innhold.
+			</div> 
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			<span class="kode">cellspacing="2"</span> gjør at alle
+			celler i denne tabellen får et tomt område på 2 pixler mellom seg fra alle fire sider rundt cellen. Når
+			vi legger til en tabell med hvit bakgrunnsfarge inni denne får vi derfor en blå ramme rundt den hvite tabellen,
+			2 pixler bred.<br> 
+			Vi legger til den hvite tabellen.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;table bgcolor="#3870A8" width="160" border="0" cellpadding="0" cellspacing="2"&gt;&lt;tr&gt;&lt;td&gt;<br><font color="#ff0000">
+			&lt;table bgcolor="#FFFFFF" width="100%" border="0" cellpadding="0" cellspacing="2"&gt;&lt;tr&gt;&lt;td&gt;<br><br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></font>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul>
+			</div>
+			<center>
+			<table bgcolor="#3870A8" width="160" border="0" cellpadding="0" cellspacing="2"><tr><td>
+			<table bgcolor="#ffffff" width="100%" height="20" border="0" cellpadding="0" cellspacing="2"><tr><td>
+			</td></tr></table>
+			</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			Vi har altså her en hvit tabell inni en blå tabell, men det ser ut som vi har en hvit tabell med blå ramme.
+			Den blå rammen skal egentlig representere bakgrunnsfargen på siden tabellen skal ligge i. Det er den hvite 
+			tabellen som skal være rammen rundt andre celler. Derfor har denne også <span class="kode">cellspacing="2"</span>.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+
+			<div class="tekst">
+			Når vi skal lage celler til tabellen vår, legger vi til tabeller med en eller annen bakgrunn i hver celle. 
+			Dette gjør at vi har full kontroll over innholdet i cellene, og kan legge til det vi ønsker av innhold.<br>
+			Vi legger til to celler i tabellen vår.
+			</div>			
+			<div class="kode">
+			<ul>
+			&lt;table bgcolor="#3870A8" width="160" border="0" cellpadding="0" cellspacing="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table bgcolor="#FFFFFF" width="100%" border="0" cellpadding="0" cellspacing="2"&gt;<br><br>
+
+			&lt;tr&gt;&lt;td&gt;<font color="#ff0000">&lt;table bgcolor="#3870A8" width="100%" border="0" cellpadding="3" cellspacing="0"&gt;<ul>
+				&lt;tr&gt;&lt;td&gt;celle 1&lt;/td&gt;&lt;/tr&gt;<br></ul>
+			&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;<br><br>
+
+			&lt;tr&gt;&lt;td&gt;&lt;table bgcolor="#3870A8" width="100%" border="0" cellpadding="3" cellspacing="0"&gt;<ul>
+				&lt;tr&gt;&lt;td&gt;celle 2&lt;/td&gt;&lt;/tr&gt;<br></ul>
+			&lt;/table&gt;</font>&lt;/td&gt;&lt;/tr&gt;<br><br>		
+			
+			&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul>
+			</div>
+			<center>
+			<table bgcolor="#3870A8" width="160" border="0" cellpadding="0" cellspacing="2"><tr><td>
+			<table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="2">
+
+			<tr><td><table bgcolor="#3870A8" width="100%" border="0" cellpadding="3" cellspacing="0">
+				<tr><td width="100%"><font color="#FFFFFF"><b>celle 1</b></font></td></tr>
+			</table></td></tr>
+
+			<tr><td><table bgcolor="#3870A8" width="100%" border="0" cellpadding="3" cellspacing="0">
+				<tr><td width="100%"><font color="#FFFFFF"><b>celle 2</b></font></td></tr>
+			</table></td></tr>
+			
+			</td></tr></table>
+			</td></tr></table>
+			</center>		
+			<div class="tekst">
+			&nbsp;<br>
+			Hver celle i den hvite tabellen inneholder altså en tabell med blå bakgrunn. Denne tabellen kan da ha så mange
+			celler den vil hvor hver celle har forskjellige bakgrunner. F.eks. kan man ha bakgrunnsbilde med en gradert
+			farge i overskriftscellen og en ensfarget bakgrunn i de øvrige cellene, slik jeg har brukt i menyen på denne siden.
+			</div>	
+
+			&nbsp;<br><hr color="#3870A8"><br>
+
+			<div class="tekst">
+			Det kan være lurt å ha kommentar-tagger i begynnelsen av hver celle for oversiktens skyld. Det blir veldig fort 
+			kaos når man lager et stort hierarki av tabeller. 
+			</div>			
+			<div class="kode">
+			<ul>
+			&lt;table bgcolor="#3870A8" width="160" border="0" cellpadding="0" cellspacing="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table bgcolor="#FFFFFF" width="100%" border="0" cellpadding="0" cellspacing="2"&gt;<br><br>
+
+			<font color="#ff0000">&lt;!--HER BEGYNNER CELLE 1--&gt;<br></font>
+			&lt;tr&gt;&lt;td&gt;&lt;table bgcolor="#3870A8" width="100%" border="0" cellpadding="3" cellspacing="0"&gt;<ul>
+				&lt;tr&gt;&lt;td&gt;celle 1&lt;/td&gt;&lt;/tr&gt;<br></ul>
+			&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+			<font color="#ff0000">&lt;!--SLUTT PÅ CELLE 1--&gt;<br><br></font>
+
+			<font color="#ff0000">&lt;!--HER BEGYNNER CELLE 2--&gt;<br></font>
+			&lt;tr&gt;&lt;td&gt;&lt;table bgcolor="#3870A8" width="100%" border="0" cellpadding="3" cellspacing="0"&gt;<ul>
+				&lt;tr&gt;&lt;td&gt;celle 2&lt;/td&gt;&lt;/tr&gt;<br></ul>
+			&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+			<font color="#ff0000">&lt;!--SLUTT PÅ CELLE 2--&gt;<br><br></font>	
+			
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul>
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

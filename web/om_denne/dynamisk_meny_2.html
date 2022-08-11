@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk meny</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk meny</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<a href="dynamisk_meny.html" target="hoved">del 1</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<span class="underoverskrift">del 2</span>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_meny_3.html" target="hoved">del 3</a>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			Vi skal nå lage et javascript med to funksjoner. En funksjon som skal hete &quot;vis_skjul&quot; tar seg av 
+			vising og skjuling av menyene, og funksjonen &quot;bytt_knapp&quot; bytter om på bildene som representerer knappen. 
+			Javascriptet skal stå øverst i html-dokumentet, innenfor <span class="kode">head</span>-taggen. 
+			</div>
+			
+			<div class="kode">
+			<ul><font color="#ff0000">
+			&lt;html&gt;<br>
+			&lt;head&gt;<br><br>
+
+				  <ul>&lt;script language="JavaScript"&gt;<br><br>
+				  &lt;/script&gt;<br><br></ul>
+
+			&lt;/head&gt;<br><br>
+			...<br><br>
+			&lt;/html&gt;
+
+			</font></ul>
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Funksjonen &quot;vis_skjul&quot; tar ett argument. Argumentet sier hvilken av menyene vi skal utføre endringer på. 
+			Hvis menyen er skjult skal den vises, og hvis den er synlig skal den skjules. For å finne ut om menyen er skjult eller 
+			ikke, kan vi spørre tabellradens <span class="kode">style.display</span>-egenskap.
+			</div>
+			<div class="kode">
+			<ul><font color="#ff0000">
+			function vis_skjul(valg) {<br>
+				<ul>if(document.all["under_" + valg].style.display == "none")<br>
+				{<br>
+				 	<font color="#008000"><ul>// den er skjult, og skal vises<br></ul></font>
+				}<br>
+				else<br>
+				{<br>
+				 	<font color="#008000"><ul>// den er synlig og skal skjules<br></ul></font>
+				}<br></ul>
+			}<br>
+			</font></ul>				
+			</div>
+			<div class="tekst">
+			<span class="kode">document.all</span> er en referanse til alle objekter i html-dokumentet som har navnet som skrives 
+			inni klammeparentesen. Inni klammen har jeg skrevet <span class="kode">"under_" + valg</span>. Hvis vi sender med &quot;diverse&quot; 
+			som argument når vi kaller på funksjonen (i <a href="dynamisk_meny_3.html" target="hoved">del 3</a>) vil javascriptet ha en referanse 
+			til alle objekter som heter &quot;under_diverse&quot;, som er tabellraden som inneholder alle linkene. Dette ble definert i <a href="dynamisk_meny_1.html" target="hoved">del 1</a>.<br><br>
+			
+			Hvis objektet's <span class="kode">style.display</span>-egenskap har verdien &quot;none&quot; betyr det at den ikke vises;<br> 
+			-det som vises er ingenting.			 
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Nå gjenstår bare koden som foretar selve visingen og skjulingen av objektene. Vi ønsker å skjule den tabellraden som 
+			kun er en blå linje i tillegg til tabellraden med linkene. For å skjule setter vi <span class="kode">style.display = "none"</span>, og for å 
+			vise setter vi <span class="kode">style.display = ''</span>, som egentlig er <span class="kode">null</span>. Vi må også 
+			skifte bildet som representerer knappen. Den skal vise pil opp når menyen vises, og pil ned når menyen er skjult.
+			</div>
+			<div class="kode">
+			<ul>
+			function vis_skjul(valg) {<br>
+				<ul>if(document.all["under_" + valg].style.display == "none")<br>
+				{<br><font color="#ff0000">
+				 	<ul>document.all["velger_" + valg].src = opp_on.src
+					document.all["under_" + valg].style.display = ''
+					document.all["skille_" + valg].style.display = ''</ul></font>
+				}<br>
+				else<br>
+				{<br><font color="#ff0000">
+				 	<ul>document.all["velger_" + valg].src = ned_on.src
+					document.all["under_" + valg].style.display = "none"
+					document.all["skille_" + valg].style.display = "none"</ul></font>
+				}<br></ul>
+			}<br>
+			</ul>
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Vi må også ha en funksjon som bytter bildene som representerer knappen. Dette fordi knappen skal endre farge når man 
+			peker på en av menyene. Dette gjør at knappen blir lettere å oppdage for brukere som ikke vet hvordan menyen er oppbygd 
+			og hvordan den virker.
+			</div>
+			<div class="kode">
+			<ul><font color="#ff0000">
+			function bytt_knapp(valg, on_off)<br>
+			{<br><br>
+				 
+			}<br>
+			</font></ul>
+			</div>
+			<div class="tekst">
+			Argumentet valg angir hvilken meny's knapp som skal forandres. Det andre argumentet angir om knappen skal være opplyst 
+			eller ikke. 
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Vi definerer at &quot;on&quot; i det andre argumentet skal bety at knappen skal være opplyst, og at &quot;off&quot; 
+			skal bety at den er i normal tilstand. Vi lager så en <span class="kode">if</span>-setning som skjekker dette. 
+			</div>
+			<div class="kode">
+			<ul>
+			function bytt_knapp(valg, on_off) {<br><font color="#ff0000">
+				<ul>if(on_off == "on")<br>
+				{<br><br>	 
+				
+				}<br>
+				else if(on_off == "off")<br>
+				{<br><br>
+				
+				}</ul></font>
+			}<br>
+			</ul>
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Vi må nå finne ut om bildet vi skal forandre er en opp-pil eller om det er en ned-pil. Vi lager derfor <span class="kode">if</span>-setninger 
+			for dette også.
+			</div>
+			<div class="kode">
+			<ul>
+			function bytt_knapp(valg, on_off) {<br>
+				<ul>if(on_off == "on")<br>
+				{<br><font color="#ff0000">	 
+					<ul>if(document.all["velger_" + valg].src == ned.src)<br>
+						<ul><font color="#008000">// knappen er en belyst ned-pil</font><br></ul>
+					else if(document.all["velger_" + valg].src == opp.src)<br>
+						<ul><font color="#008000">// knappen er en belyst opp-pil</font><br></ul> 
+					</ul>
+				</font>}<br>
+				else if(on_off == "off")<br>
+				{<br><font color="#ff0000">
+					<ul>if(document.all["velger_" + valg].src == ned_on.src)<br>
+						<ul><font color="#008000">// knappen er en ned-pil med normal tilstand</font><br></ul>
+					else if(document.all["velger_" + valg].src == opp_on.src)<br>
+						<ul><font color="#008000">// knappen er en opp-pil med normal tilstand</font><br></ul>
+					</ul>				
+				</font>}</ul>
+			}<br>
+			</ul>			
+			</div>
+			<div class="tekst">
+			Som vi husker fra del 1 fikk knappen navnet &quot;velger_diverse&quot;. Ved å sette &quot;diverse&quot; som første argument 
+			når vi kaller denne metoden er det knappen i diverse-menyen vi gjør endringer på.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Hvis knappen for øyeblikket er en ned-pil, skal den forandres til en ned-pil med en annen farge/tilstand og vice versa. 
+			Vi skriver koden som forandrer bildet.
+			</div>
+			<div class="kode">
+			<ul>
+			function bytt_knapp(valg, on_off) {<br>
+				<ul>if(on_off == "on")<br>
+				{<br>	 
+					<ul>if(document.all["velger_" + valg].src == ned.src)<br>
+						<ul><font color="#ff0000">document.all["velger_" + valg].src = ned_on.src</font><br></ul>
+					else if(document.all["velger_" + valg].src == opp.src)<br>
+						<ul><font color="#ff0000">document.all["velger_" + valg].src = opp_on.src</font><br></ul> 
+					</ul>
+				}<br>
+				else if(on_off == "off")<br>
+				{<br>
+					<ul>if(document.all["velger_" + valg].src == ned_on.src)<br>
+						<ul><font color="#ff0000">document.all["velger_" + valg].src = ned.src</font><br></ul>
+					else if(document.all["velger_" + valg].src == opp_on.src)<br>
+						<ul><font color="#ff0000">document.all["velger_" + valg].src = opp.src</font><br></ul>
+					</ul>				
+				}</ul>
+			}<br>
+			</ul>						
+			</div>
+			<div class="tekst">
+			Det kan se ut som denne funksjonen virker akkurat like bra selv om vi hadde kuttet ut det andre argumentet og de ytterste <span class="kode">if</span>-setningene.
+			Men man ville da kunne oppleve at knappen hadde &quot;kommet ut av rytme&quot; av og til. Den ville da slått seg på når man <i>ikke</i> peket på menyen o.s.v.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Det eneste vi mangler nå er en funksjon som skal kalles når sida først vises. Denne funksjonen skal laste ned de 
+			nødvendige bildene og lagre dem i variablene som vi har brukt ovenfor. Ved å ha bildene lastet ned på forhånd kan 
+			de vises straks vi har behov for dem. Uten denne funksjonen ville skiftingen av bildene hengt lenge etter, fordi man 
+			måtte ventet på at de skulle lastes ned hver gang. 
+			</div>
+			<div class="kode"><font color="#ff0000"><ul>
+			function oppstart() {<br>
+				<ul>opp = new Image()<br>
+				opp_on = new Image()<br>
+				ned = new Image()<br>
+				ned_on = new Image()<br><br>
+				
+				opp.src = "opp.gif"<br>
+				opp_on.src = "opp_on.gif"<br>
+				ned.src = "ned.gif"<br>
+				ned_on.src = "ned_on.gif"<br></ul>
+			}</ul></font>
+			</div>
+			<div class="tekst">
+			De fire første setningene lager nye image-objekter som vi kan lagre bildene i. De fire siste setningene laster ned bildene 
+			og lagrer dem i variablene. Dette virker dessverre bare på den nyeste versjonen av Internet Explorer. Men man må uansett ta 
+			denne funksjonen med, siden vi refererer til disse variablene ellers i scriptet.
+			<p align="right"><a href="dynamisk_meny_3.html" target="hoved">-&gt;del 3</a></p>
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

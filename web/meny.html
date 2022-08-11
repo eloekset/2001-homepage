@@ -1,0 +1,374 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+<html>
+
+<head>
+
+	<title>Meny</title>
+
+	<link rel="STYLESHEET" href="formateringer.css" type="text/css">
+
+	
+
+	<script language="JavaScript">
+	function velg(url) {
+			 var strText = "";
+
+			 if (url == "blank") {
+			 	strText = "";
+			 }
+			 else if (url =="om_meg") {
+			 	  strText += "Informasjon om meg, CV-en min, militæret, kontaktinfo...";
+			 }
+			 else if (url == "programmering") {
+			 	  strText += "En side om prosjektene mine i java. ";
+				  strText += "Her finner du online spill også.";
+				  strText += "<center><table width='80' border='0' cellspacing='0' cellpadding='0'><tr><td align='center' width='100%'><img src='" + javatroll.src + "' width='65' height='40'></td></tr><tr><td bgcolor='#3870A8' height='2' width='100%'></td></tr></table></center>";
+			 }
+			 else if (url == "webdesign") {
+			 	  strText += "&quot;Hemmelighetene&quot; bak denne siden, om de gamle sidene mine, ";
+				  strText += "script, CSS og HTML-triks.";
+			 }
+			 else if (url == "diverse") {
+			 	  strText += "Humorside, linker til venner med hjemmeside +++";
+			 }
+			 else if (url == "cv") {
+			 	  strText += "CV-en min";
+			 }
+			 else if (url == "meg") {
+			 	  strText += "En kjapp beskrivelse av meg.";
+			 }
+			 else if (url == "lutvann") {
+			 	  strText += "Litt om tiden jeg tilbrakte i militæret på Lutvann i Oslo.";
+			 }
+			 else if (url == "kontakt") {
+			 	  strText += "Postadresser, telefonnummer, e-post...";
+				  strText += "<br><center><img src='" + mobiltelefon.src + "'></center>";
+			 }
+			 else if (url == "online_spill") {
+			 	  strText += "Java-appleter med spill som kan spilles online på web. ";
+				  strText += "Tanken er at det skal bli mange etterhvert.";
+			 }
+			 else if (url == "prosjekter") {
+			 	  strText += "Java-prosjektene mine. Halvferdige prosjekter vil nok prege ";
+				  strText += "denne sida. Problemer jeg kommer opp i legges også ut i håp om ";
+				  strText += "å få hjelp.";
+			 }
+			 else if (url == "om_denne") {
+			 	  strText += "Her finner du informasjon om denne hjemmesiden. ";
+				  strText += "Alle &quot;triks&quot; jeg har benyttet, bl.a. ";
+				  strText += "java-scriptet som lager menyforklaringen.";
+			 }
+			 else if (url == "hovedside") {
+			 	  strText += "Velkomstsiden";
+			 }
+			 else if (url == "skole") {
+			 	  strText += "En samling sammendrag av (noen av) skolebøkene jeg har lest.";
+			 }			 
+			 else if (url == "humorside") {
+			 	  strText += "Bilder med komisk motiv. Linker til morsomme steder på nettet.";
+			 }
+			 else if (url == "venner") {
+			 	  strText += "Linker til mine venner's web-sider.";
+			 }
+			 else if (url == "logg") {
+			 	  strText += "Logg over hva som er oppdatert på websida med tidspunkt. "
+				  strText += "Se hva jeg har forandret siden sist."
+			 }
+			 else if (url == "epost") {
+			 	  strText += "Send e-post til meg.";
+				  strText += "<br><center><img src='" + pingvin.src + "' width='49' height='60'></center>";
+				  document.all["epost"].style.backgroundColor="#8EB4DA";
+			 }
+			 else if (url == "bort_epost") {
+			 	  strText += "";
+				  document.all["epost"].style.backgroundColor="#3870A8";
+			 }			 
+			 else if (url == "les") {
+			 	  strText += "Les i gjesteboka mi.";
+				  document.all["les"].style.backgroundColor="#8EB4DA";
+			 }
+			 else if (url == "bort_les") {
+			 	  strText += "";
+				  document.all["les"].style.backgroundColor="#3870A8";
+			 }
+			 else if (url == "skriv") {
+			 	  strText += "Skriv et innlegg i gjesteboka mi. Og gjør det NÅ!!! ";
+				  strText += "Da blir jeg glad. ;o)";
+				  document.all["skriv"].style.backgroundColor="#8EB4DA";
+			 }
+			 else if (url == "bort_skriv") {
+				  strText += "";
+				  document.all["skriv"].style.backgroundColor="#3870A8";
+			 }
+
+	  		 document.all["forklaring"].innerHTML = strText;
+	}	
+  </script>
+
+
+
+  <script language="JavaScript">
+
+	function vis_skjul (valg)
+	{
+		if(document.all["under_" + valg].style.display == "none")
+		{
+			document.all["velger_" + valg].src = minus_On.src
+			document.all["under_" + valg].style.display = ''
+			document.all["skille_" + valg].style.display = ''
+		}
+		else
+		{
+			document.all["velger_" + valg].src = pluss_On.src
+			document.all["under_" + valg].style.display = "none"
+			document.all["skille_" + valg].style.display = "none"
+		}
+	}
+	
+	function highlight (valg, on_off)
+	{
+	 	if(on_off == "on")
+		{
+		 	if(document.all["velger_" + valg].src == pluss.src)
+				document.all["velger_" + valg].src = pluss_On.src
+			else if(document.all["velger_" + valg].src == minus.src)
+				document.all["velger_" + valg].src = minus_On.src
+		}
+		else if(on_off == "off")
+		{
+		 	if(document.all["velger_" + valg].src == minus_On.src)
+				document.all["velger_" + valg].src = minus.src
+			else if(document.all["velger_" + valg].src == pluss_On.src)
+				document.all["velger_" + valg].src = pluss.src
+		}
+	}
+
+	function oppstart () 
+	{
+		minus = new Image()
+		minus_On = new Image()
+		pluss = new Image()
+		pluss_On = new Image()
+		javatroll = new Image()
+		mobiltelefon = new Image()
+		pingvin = new Image()
+		
+		minus.src = "minus_off.gif"
+		minus_On.src = "minus_on.gif"
+		pluss.src = "pluss_off.gif"
+		pluss_On.src= "pluss_on.gif"
+		javatroll.src = "javatroll.gif"
+		mobiltelefon.src = "nokia.gif"
+		pingvin.src = "pingvin.gif"
+		
+		vis_skjul('meg')
+		vis_skjul('webdesign')
+		vis_skjul('programmering')
+		document.all["velger_meg"].src = pluss.src
+		document.all["velger_webdesign"].src = pluss.src
+		document.all["velger_programmering"].src = pluss.src
+  	}
+
+  </script>	
+
+</head>
+
+
+
+<body onLoad="oppstart()" bgcolor="#3870a8" leftmargin="5" topmargin="0">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#ffffff"><tr><td>
+
+	   <!--Overskrift-->
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+	   <tr>
+	   <td valign="top">
+	   	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+		   <tr>
+		   	   <td width="100%" bgcolor="#3870a8" align="center"><div class="underoverskrift">Meny</div></td>
+	   	   </tr>
+	   	   </table>
+	   </td>
+	   </tr>
+	   </table>
+	   <!--Overskrift slutt-->
+   
+
+	   <!--tabellen rundt menyelementene-->
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="menybakgrunn.jpg" onMouseOver="velg('om_meg'), highlight('meg', 'on')" onMouseOut="velg('blank'), highlight('meg', 'off')">
+				<img src="pluss_off.gif" id="velger_meg" onClick="vis_skjul('meg')" alt="Klikk for å vise/skjule" width="14" height="9"><span class="meny">Meg</span>
+				</td>
+			</tr>
+			<tr id="skille_meg"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_meg">
+				<td>
+				        &nbsp;<img src="link.gif" width="9" height="7"><a href="cv.html" target="hoved" class="menyvalg" onMouseOver="velg('cv')" onMouseOut="velg('blank')">Curriculum 
+                          Vitae</a><br>
+                        &nbsp;<img src="link.gif" width="9" height="7"><a href="meg.html" target="hoved" class="menyvalg" onMouseOver="velg('meg')" onMouseOut="velg('blank')">Løst 
+                          om meg</a><br>
+                        &nbsp;<img src="link.gif" width="9" height="7"><a href="lutvann/index.htm" target="hoved" class="menyvalg" onMouseOver="velg('lutvann')" onMouseOut="velg('blank')">Milit&aelig;ret</a><br>
+                        &nbsp;<img src="link.gif" width="9" height="7"><a href="kontakt.htm" target="hoved" class="menyvalg" onMouseOver="velg('kontakt')" onMouseOut="velg('blank')">Kontakt</a> 
+                      </td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+	   
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="menybakgrunn.jpg" onMouseOver="velg('programmering'), highlight('programmering', 'on')" onMouseOut="velg('blank'), highlight('programmering', 'off')">
+			   		<img src="pluss_off.gif" id="velger_programmering" onClick="vis_skjul('programmering')" alt="Klikk for å vise/skjule" width="15" height="9"><span class="meny">Programmering</span>
+				</td>
+			</tr>
+			<tr id="skille_programmering"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_programmering">
+				<td>
+				&nbsp;<img src="link.gif" width="9" height="7"><a href="http://home.online.no/~loekseth/online_spill/index.html" target="hoved" class="menyvalg" onMouseOver="velg('online_spill')" onMouseOut="velg('blank')">Online spill</a><br>
+				&nbsp;<img src="link.gif" width="9" height="7"><a href="http://home.online.no/~loekseth/prosjekter/index.html" target="hoved" class="menyvalg" onMouseOver="velg('prosjekter')" onMouseOut="velg('blank')">Prosjekter i Java</a>
+				</td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+	   
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="menybakgrunn.jpg" onMouseOver="velg('webdesign'), highlight('webdesign', 'on')" onMouseOut="velg('blank'), highlight('webdesign', 'off')">
+			   		<img src="pluss_off.gif" id="velger_webdesign" onClick="vis_skjul('webdesign')" alt="Klikk for å vise/skjule" width="14" height="9"><span class="meny">Webdesign</span>
+				</td>
+			</tr>
+			<tr id="skille_webdesign"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_webdesign">
+				      <td>&nbsp;<img src="link.gif" width="9" height="7"><a href="om_denne/index.html" target="hoved" class="menyvalg" onMouseOver="velg('om_denne')" onMouseOut="velg('blank')">Om 
+                        denne hjemmesiden</a></td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+	   
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="menybakgrunn.jpg" onMouseOver="velg('diverse'), highlight('diverse', 'on')" onMouseOut="velg('blank'), highlight('diverse', 'off')">
+			   		<img src="minus_off.gif" id="velger_diverse" onClick="vis_skjul('diverse')" alt="Klikk for å vise/skjule" width="14" height="9"><span class="meny">Diverse</span>
+				</td>
+			</tr>
+			<tr id="skille_diverse"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_diverse">
+				      <td>&nbsp;<img src="link.gif" width="9" height="7"><a href="hoved.html" target="hoved" class="menyvalg" onMouseOver="velg('hovedside')" onMouseOut="velg('blank')">Hovedside</a><br>
+				&nbsp;<img src="link.gif" width="9" height="7"><a href="skole/" target="hoved" class="menyvalg" onMouseOver="velg('skole')" onMouseOut="velg('blank')">Skole</a><br>
+				&nbsp;<img src="link.gif" width="9" height="7"><a href="humor.html" target="hoved" class="menyvalg" onMouseOver="velg('humorside')" onMouseOut="velg('blank')">Humorside</a><br>
+				&nbsp;<img src="link.gif" width="9" height="7"><a href="venner.html" target="hoved" class="menyvalg" onMouseOver="velg('venner')" onMouseOut="velg('blank')">Venner's hjemmesider</a><br>
+                        &nbsp;<img src="link.gif" width="9" height="7"><a href="logg_2002.html" target="hoved" class="menyvalg" onMouseOver="velg('logg')" onMouseOut="velg('blank')">Logg</a> 
+                      </td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+ 
+
+	   </table></td>
+	   </tr></table><!--tabellen rundt menyelementene-->
+
+
+<!--den ytterste tabellen-->
+
+&nbsp;
+
+<!--tool-tip-text-->
+<table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   		  <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="2"><tr><td>
+
+			  		 <table width="100%" border="0" cellspacing="0" cellpadding="3">
+					 <tr>
+					 <td>
+					 	 <div class="underoverskrift">Menyforklaring</div>
+					 </td>
+					 </tr>
+					 
+			  		 <tr>
+			  		 <td valign="top" background="menybakgrunn.jpg" width="100%" height="100">
+			  	  	 	 <div id="forklaring" class="menyforklaring"></div>
+			  		 </td>
+			  		 </tr>
+			  		 </table>
+
+	   		  </td></tr></table>
+	   </td></tr></table>
+
+</td></tr></table><!--tool-tip-text slutter her-->
+
+&nbsp;
+
+<!--mail, gjestebok, oppdatert-->
+<table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+
+			  <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+			  <tr>
+			  <td align="center" id="epost">
+			  	  <a href="mailto:eloekset@online.no" target="hoved" onMouseOver="velg('epost')" onMouseOut="velg('bort_epost')"><img src="epost.gif" width="31" height="29" border="0"></a>
+			  </td>
+			  <td align="center" id="les">
+			  	  <a href="/cgi-bin/vis-interaktiv?gusloek/gb01" target="hoved" onMouseOver="velg('les')" onMouseOut="velg('bort_les')"><img src="gjestebok_les.gif" width="32" height="27" border="0"></a>
+			  </td>
+			  <td align="center" id="skriv">
+			  	  <a href="gb_skriv.html" target="hoved" onMouseOver="velg('skriv')" onMouseOut="velg('bort_skriv')"><img src="gjestebok_skriv.gif" width="32" height="32" border="0"></a>
+			  </td>
+			  </tr>
+			  </table>
+
+	   </td></tr></table>
+	   
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+			  <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+			  <tr>
+			  <td>
+			  	  <p align="center" style="margin-top: 0; margin-bottom: 0"><b><font face="Verdana" size="2" color="#FFDE94">Oppdatert</font></b></p>
+                  <p align="center" style="margin-top: 0; margin-bottom: 0"><b><font face="Verdana" size="2" color="#FFDE94">26. 
+                    november 2002</font></b> </td>
+			  </tr>
+			  </table>
+	   </td></tr></table>
+
+   	   <table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+			  <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+			  <tr>
+			  <td align="center" valign="center">
+			  	  <img src="/cgi-bin/Count.cgi?df=gusloek&dd=D&ft=0&trgb=black">
+			  </td>
+			  </tr>
+			  </table>
+	   </td></tr></table>	    
+
+</td></tr></table>
+
+ 
+
+</body>
+</html>
+

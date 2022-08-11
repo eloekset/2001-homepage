@@ -1,0 +1,1118 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./kap6_files/filelist.xml">
+<link rel=Edit-Time-Data href="./kap6_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Designing The User Interface</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>IT-Senteret</o:Author>
+  <o:LastAuthor>IT-Senteret</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>219</o:TotalTime>
+  <o:LastPrinted>2000-11-15T11:57:00Z</o:LastPrinted>
+  <o:Created>2001-11-14T12:27:00Z</o:Created>
+  <o:LastSaved>2001-11-14T12:27:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1368</o:Words>
+  <o:Characters>7802</o:Characters>
+  <o:Company>Høgskolen i Molde</o:Company>
+  <o:Lines>65</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>9581</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Abadi MT Condensed Light";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+h1
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	mso-ansi-language:NO-BOK;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Book Antiqua";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Overskrift1, li.Overskrift1, div.Overskrift1
+	{mso-style-name:"Overskrift 1";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	font-weight:bold;}
+p.Overskrift2, li.Overskrift2, div.Overskrift2
+	{mso-style-name:"Overskrift 2";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:19476031;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-475119912 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:115758756;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1016751542 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:272245607;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1607557008 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:278489289;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1729952570 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:527063774;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1569772720 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:545262511;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-966255402 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:607086520;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2019279530 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l7
+	{mso-list-id:630941735;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-499247734 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:658272629;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1082350942 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:661008854;
+	mso-list-type:hybrid;
+	mso-list-template-ids:784788232 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:693462557;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2116808870 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:821704080;
+	mso-list-type:hybrid;
+	mso-list-template-ids:920935232 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:822895207;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1292199736 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:827477198;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2034247666 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l13:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l14
+	{mso-list-id:865140804;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1077805026 67698689 67698703 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l14:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l15
+	{mso-list-id:983969348;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1207073222 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16
+	{mso-list-id:1070036696;
+	mso-list-type:hybrid;
+	mso-list-template-ids:135457172 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l17
+	{mso-list-id:1185485090;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-629239396 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l18
+	{mso-list-id:1271007827;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1878908756 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l19
+	{mso-list-id:1415861277;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1045484576 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l19:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l20
+	{mso-list-id:1540898572;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-307307836 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:1594316992;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-413079776 67698703 67698689 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l21:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l21:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:1712611225;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2073086864 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:1836072331;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2031083048 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l24
+	{mso-list-id:1845390457;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1007194806 67698703 67698689 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l24:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l24:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l25
+	{mso-list-id:1882398562;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1007194806 67698689 67698689 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l25:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l25:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l26
+	{mso-list-id:1913810601;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1159207006 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l26:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l27
+	{mso-list-id:1956909179;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-557839924 67698689 67698703 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l27:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l27:level2
+	{mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-GB style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<div style='border-top:solid gray 1.5pt;border-left:none;border-bottom:solid gray 1.5pt;
+border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='border:none;mso-border-top-alt:solid gray 1.5pt;
+mso-border-bottom-alt:solid gray 1.5pt;padding:0cm;mso-padding-alt:1.0pt 0cm 1.0pt 0cm'><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Arial Black";
+mso-bidi-font-family:Arial'>Kapittel 6</span><span lang=NO-BOK
+style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial'> – Direkte
+Manipulasjon og Virtuelle omgivelser<o:p></o:p></span></p>
+
+</div>
+
+<p class=Overskrift1><span lang=NO-BOK>6.2 Eksempler på
+Direkte-Manipulasjons-systemer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Et godt eksempel på direkte manipulasjon er
+bilkjøring. Bildet får føreren gjennom frontruta. Når man utfører handlilngen
+(bruker bremse, gass, svinger), får man umiddelbare tilbakemelding ved at
+bildet gjennom frontruta forandres. Føreren slipper å gi kommandoer som SVING
+VENSTRE 36 GRADER.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>6.2.1 Kommandolinje vs
+Fullskjermseditorer vs Tekstbehandling</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Kriterier for WYSIWYG-editor:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Vis en full side med tekst</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span><o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Vis dokumentet nøyaktig likt slik utskriften blir</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span><o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Tilby en markør som viser hvor handlingen foregår</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span><o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Kontroll av markør vha naturlige handlinger</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Piltaster
+     eller andre pekeenheter som mus, joystick og grafisk tegnebrett.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Bruk navngitte ikoner</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Bruk disse til ofte brukte
+     funksjoner. Dette er et permanent menyvalg som minner brukeren om
+     funksjonene og tilbyr rask handling.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Vis resultat av handling umiddelbart</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Når brukeren
+     trykker en tast, beveger på musa eller sentrerer teksten, skal resultatet
+     vises umiddelbart.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Tilby rask responstid og display</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>En side full
+     av tekst skal kunne oppdateres i en brøkdel av et sekund. Høy
+     skjermfrekvens og rask responstid bidrar til økt tilfredstillelse av kraft
+     og hurtighet.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo11;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Tilby lett reversible handlinger</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Alle
+     handlinger må kunne reverseres. En god angrefunksjon er å foretrekke. Når
+     dette tilbys minsker man frykten for å gjøre noe galt hos brukerne.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>6.2.6 Office-programmer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Undersøkelser viser at grensesnitt basert på
+direkte manipulasjon både er raskere å bruke, og fører til mindre feil enn
+kommandobasert brukergrensesnitt.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>6.2.7 Andre eksempler på Dirkete
+Manipulasjon</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Det som er vanskelig med å designe
+brukergrensesnitt basert på direkte manipulasjon, er å komme på modeller som er
+lik virkeligheten.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Forslag til bruk av direkte manipulasjon:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l26 level1 lfo12;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Lære studenter om matematiske funksjoner ved å ha et
+     display som tegner grafen til funksjonen. Studente kan bruke scrollbarer
+     for å endre de ulike tallene i funksjonen. Grafen oppdateres umiddelbart når
+     scrollbarene skifter verdi. På denne måten kan man se hvordan funksjonene
+     og deres deriverte endrer seg når man endrer visse deler av funksjonen.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l26 level1 lfo12;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Bruk av scrollbarer for å endre rød, grønn og blå
+     komponent i farger gir en tilfredsstillende måte å utforske hvordan farger
+     er oppbygd.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Direkte manipulasjon er attraktivt for
+brukerne fordi det er lett forståelig, raskt og morsomt i bruk. Hvis
+handlingene er enkle og angremuligheter er tilstede, blir frykten for systemet
+mindre, brukerne føler at de har kontroll, og tilfredsheten med systemet vil
+komme.<o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>6.3 Forklaringer til Direkte
+Manipulasjon</span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>6.3.1 Problemer med Direkte
+Manipulasjkon</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo13;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Direkte manipulasjon krever mye plass på skjermen, og kan
+     føre til at verdifull informasjon ikke kan vises, eller at man må skrolle
+     for å kunne se informasjonen. Dette krever mange handlinger og tar tid.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo13;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>For ekspertbrukere kan en liste med 50 filer være bedre
+     enn en skjerm med 10 filer representert med ikon, der navnet er redusert
+     for å tilpasses størrelsen på ikonet.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo13;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Brukerne må lære betydningen av de visuelle objektene. Et
+     ikon som gir betydning for designeren kan kreve en viss læretid hos noen
+     brukere for å skjønne. Et ord krever ingen læretid.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo13;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Brukere som benytter tastaturet mye, vil oppleve at det
+     tar tid å flytte hånden mellom tastaturet og musa når dette må gjøres mye.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>6.3.2 OAI-modellen &amp; Direkte
+Manipulasjon</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>De viktigste kriteriene for Direkte
+Manipulasjon:<o:p></o:p></span></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo14;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Meningsfull visuell representasjon av objekter og
+     handlinger.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo14;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Fysisk handling eller klikking på knapper i stedet for
+     komplekse syntaks.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo14;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Raske og reversible operasjoner hvor objekt og handling er
+     synlig umiddelbart.<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Ved bruk av kriteriene ovenfor, vil man
+kunne designe systemer hvor:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo16;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Nybegynnere kan lære basisfunksjonene raskt. Det holder
+     med å se en annen som bruker systemet.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo16;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Feilmeldinger trengs nesten ikke.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo16;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Brukerne kan med en gang se om det de gjør fører fram til
+     det de ønsker. Dersom det ikke gjør det, kan man lett gå tilbake eller
+     avbryte handlingen.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo16;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Brukerne frykter systemet mindre, fordi det er forståelig
+     og tilbyr lett reversible funksjoner.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Siden objektet som er i bruk vises, har
+brukeren tilgang til de handlingene som er aktuelt å utføre, via dette
+objektet.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>6.4 Visuell tenking og ikoner</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l27 level1 lfo17;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Det nye visuelle brukergrensesnittet refereres ofte til
+     under navnet WIMP, som står for <b>W</b>indows, <b>I</b>cons, <b>M</b>ouse,
+     og <b>P</b>ull-Down Menu. <o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l27 level1 lfo17;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>På samme måte som at folk liker forskjellige typer biler,
+     vil man merke behovet for et personlig visuelt brukergrensesnitt.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l27 level1 lfo17;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Når man jobber med visuelle oppgaver kan det være mest
+     hensiktsmessig å ha et visuelt grensesnitt, mens når man jobber med tekst
+     kan det være mest hensiktsmessig å bruke tekstbaserte menyer.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l27 level1 lfo17;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Noen handlinger er det lett å lage visuelle bilder til,
+     mens med andre er det verre. Bruk av bilde og tekst samtidig kan derfor
+     være best i noen tilfeller.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Ved designing av ikoner skal man tenke over
+følgende:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Representer objektet eller handlingen på en måte som er
+     kjent for de fleste.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Begrens antall forskjellige ikoner.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Gjør slik at ikonet står ut fra bakgrunnen.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Vurder om systemet skal ha 3D ikoner. Dette er blikkfang,
+     men kan også virke distraherende.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Vær nøye med at et ikon som er valgt skal skille seg ut
+     fra de andre som ikke er valgt.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Lag hvert ikon litt forskjellig fra alle andre.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Ikonene for sammenhørende funksjoner skal se ut som de
+     hører sammen.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Sørg for konsistent animering når objekter flyttes med
+     dra-og-slipp metoden. Brukeren kan se hele ikonet, bare rammen til ikonet,
+     en grå, gjennomsiktig eller svart versjon av ikonet.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Benytt detaljer som økende skygge som representerer størrelse
+     på fil, ramme som representerer antall filer i en mappe, farge som
+     representerer alderen på et dokument (gradering innen samme grunnfarge),
+     eller animasjon som viser hvor mye av et dokument som er ferdig utskrevet
+     (for eksempel en folder som går gradvis inn i skriveren).<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo19;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Det er svært nyttig å kombinere ikoner for å representerer
+     nye objekter eller handlinger, for eksempel flytting av fil mellom mapper,
+     kaste fil i papirkurv, utskrift av dokument.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Firepunkters guide for designing av ikoner:<o:p></o:p></span></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l24 level1 lfo20;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Leksikalsk kvalitet</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Maskinlaget merker – form på
+     pixlene, farge, lys, blinking<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l24 level1 lfo20;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Syntaks</span></i><span lang=NO-BOK style='font-size:11.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Utsende og bevegelse – linjer,
+     mønster, størrelse, fasong<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l24 level1 lfo20;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Semantikk</span></i><span lang=NO-BOK style='font-size:
+     11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Objekter som representeres – konkret
+     vs. abstrakt, delvis vs. Fullstendig<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l24 level1 lfo20;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Pragmatisk</span></i><span lang=NO-BOK style='font-size:
+     11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Generell leselighet, verktøy,
+     identifiserbart, lett å huske, pent<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l24 level1 lfo20;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Dynamisk</span></i><span lang=NO-BOK style='font-size:
+     11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Reaksjon på klikk – framheving,
+     dra-og-slipp, kombinert<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>6.5 Programmering med Direkte
+Manipulasjon</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo21;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Noen profesjonelle TV-kamera tillater brukeren å
+     programmere en sekvens av bevegelse, zooming osv, for så å kjøre dette ved
+     senere anledninger.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo21;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Noen tekstbehandlere tillater brukerne å programmere en
+     rekke handlinger til senere bruk. Funksjonen kalles makro.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l25 level1 lfo21;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Ofte kan roboter programmeres ved at man fysisk beveger
+     delene på ulike måter. Robotene gjør de samme bevegelsene senere, bare mye
+     raskere.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>6.7 Direkte manipulasjon over avstander</span></p>
+
+<p class=MsoBodyText><span lang=NO-BOK>Telemedisin er et relativt nytt begrep.
+Dette innebærer at legen befinner seg langt unna pasienten han opererer. Dette
+gjøres ved hjelp av et nettverk mellom legen og verktøyet som operer pasienten.</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span lang=NO-BOK>Noen kompliserte faktorer spiller inn:</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo23;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Tidsforskjeller</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Nettverket gjør at man får en
+     tidsforskjell fra brukeren gjør en ting, til han får tilbakemelding.
+     Datasignalet må gå over lange avstander, og dette tar litt tid. For
+     eksempel hvis man gir en kommando for å flytte gjenstanden, kan det ta
+     noen sekunder før dette faktisk skjer, og enda noen sekunder før man får
+     tilbakemelding på at det <i>har</i> skjedd.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo23;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Ufullstendig tilbakemelding</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Enheten som skal utføre handlingene
+     har kanskje ikke tilstrekkelig med sensorer til at brukeren får
+     tilbakemelding om alt som skjer i den grad han ville fått dersom han var
+     fysisk tilstede.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>6.8 Virtuelle omgivelser</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>De som designer flysimulatorer har benyttet
+en rekke triks for å lage en så realistisk opplevelse som mulig. Displayene i
+cockpiten ser ut som originale. Vinduene er erstattet av store
+høyoppløsningsskjermer, og realistiske lyder er lagt til. Vibrering og tilting
+ved stiging, svinging osv er laget ved hjelp av hydrauliske armer som beveger
+selve simulatoren.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Prinsippene for direkte manipulasjon og OAI
+modellen kan være til stor hjelp for dem som designer virtuelle miljøer. For å
+lage en bra virtuell opplevelse må man benytte ulike spesielle teknologier:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo24;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Visuelt display</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Dataskjermer med normal størrelse
+     dekker ikke større område enn en vinkel på 5 grader. Store skjermer kan
+     dekke vinkler på mellom 20 og 30 grader. Briller eller hodemonterte
+     display kan dekke en vinkel på 100 grader. Ved å tilføye sensorer som
+     reagerer på bevegelse med nøyaktighet på 1 grads rotering kan man
+     oppdatere bildet i brillene slik at brukeren opplever et synlig område på
+     360 grader når han snur seg rundt.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo24;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Force feedback</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Håndkontroller med force
+     feedback-funksjon gir brukeren tilbakemelding ved å riste eller gjøre
+     motstand på forskjellige måter etter hva som skjer i det virtuelle
+     miljøet.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo24;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Lyd</span></i><span lang=NO-BOK style='font-size:11.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Lyd gjør at man kan få en mer
+     realistisk opplevelse av en ball som spretter, hjerte som banker, vase som
+     knuses. Dette har vært benyttet veldig lenge av spillprogrammerere.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo24;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Nye sensasjoner</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Tilting og vibrering gir en virtuell
+     virkelighet i en flysimulator. Kan en lignende metode brukes på for
+     eksempel en virtuell berg og dal bane? Man kan da kjøre i 60, 600 eller
+     6000 km/t!!!<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t202" style='position:absolute;
+ margin-left:-4.95pt;margin-top:2.65pt;width:423pt;height:252pt;z-index:1'
+ fillcolor="silver" strokeweight="4.5pt">
+ <v:stroke linestyle="thickThin"/>
+ <v:textbox inset="14.4pt,14.4pt,14.4pt,14.4pt">
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <h1><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+    font-family:"Book Antiqua"'>Definisjon<o:p></o:p></span></h1>
+    <ul style='margin-top:0cm' type=disc>
+     <li class=MsoNormal style='mso-list:l4 level1 lfo26;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Visuell representasjon av verden.<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l4 level1 lfo26;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Raske og reversible handlinger<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l4 level1 lfo26;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Peke og velge i stedet for skrive<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l4 level1 lfo26;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Umiddelbar tilbakemelding<o:p></o:p></span></li>
+    </ul>
+    <h1><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+    font-family:"Book Antiqua"'>Nytte overfor kommandoer<o:p></o:p></span></h1>
+    <ul style='margin-top:0cm' type=disc>
+     <li class=MsoNormal style='mso-list:l0 level1 lfo27;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Mindre syntaks reduserer feilrate<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l0 level1 lfo27;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Feil er lettere å unngå<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l0 level1 lfo27;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Rask læring, lettere å huske over tid<o:p></o:p></span></li>
+    </ul>
+    <h1><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+    font-family:"Book Antiqua"'>Ting av betydning<o:p></o:p></span></h1>
+    <ul style='margin-top:0cm' type=disc>
+     <li class=MsoNormal style='mso-list:l9 level1 lfo28;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Krever større systemressurser<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l9 level1 lfo28;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Noen handlinger kan bli tungvinte<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l9 level1 lfo28;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Makroteknikk er ofte vanskelig og dårlig<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l9 level1 lfo28;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Vanskelig å registrere handlinger som har
+         vært gjort</span></li>
+    </ul>
+    <p class=MsoNormal><span lang=NO-BOK><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=NO-BOK><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:0;left:-10px;top:1px;width:572px;height:345px'><img width=572
+height=344 src="./kap6_files/image001.gif"
+alt="Text Box: Definisjon&#13;&#10;·&#9;Visuell representasjon av verden.&#13;&#10;·&#9;Raske og reversible handlinger&#13;&#10;·&#9;Peke og velge i stedet for skrive&#13;&#10;·&#9;Umiddelbar tilbakemelding&#13;&#10;Nytte overfor kommandoer&#13;&#10;·&#9;Mindre syntaks reduserer feilrate&#13;&#10;·&#9;Feil er lettere å unngå&#13;&#10;·&#9;Rask læring, lettere å huske over tid&#13;&#10;Ting av betydning&#13;&#10;·&#9;Krever større systemressurser&#13;&#10;·&#9;Noen handlinger kan bli tungvinte&#13;&#10;·&#9;Makroteknikk er ofte vanskelig og dårlig&#13;&#10;·&#9;Vanskelig å registrere handlinger som har vært gjort&#13;&#10;&#13;&#10;&#13;&#10;"
+v:shapes="_x0000_s1026"></span><![endif]><span lang=NO-BOK style='font-size:
+11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

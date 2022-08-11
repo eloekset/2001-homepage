@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk tekstfelt</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+	
+	<script language="JavaScript">
+	function velg(valg) {
+		var strText="";
+		
+		if(valg == "valg1") {
+			strText += "Dette er valg 1";
+		}
+		if(valg == "valg2") {
+			strText += "Dette er valg 2. <br>";
+			strText += "Det er det andre valget.";
+		}
+		
+		document.all["tekstfelt"].innerHTML = strText;
+	}	 		 
+	</script>
+	
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk tekstfelt</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<a href="dynamisk_tekstfelt.html" target="hoved">del 1</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tekstfelt_2.html" target="hoved">del 2</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<span class="underoverskrift">del 3</span>
+	</td></tr></table>
+	&nbsp;<br>&nbsp;<br>
+	
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			Vi skal nå lage objektene som skal kalle på velg-funksjonen i javascriptet. Disse trenger ikke være 
+			noe spesielt objekt egentlig. Jeg har her valgt å bruke vanlige linker, men du kan bruke nesten hva 
+			som helst. Bilder og tabellceller for å nevne noe.<br>
+			Vi ønsker nå å oppfange to hendelser, eller event som det kalles på engelsk. Vi ønsker å finne ut når musen 
+			holdes over et område. De to hendelsene vi trenger er <span class="kode">onMouseOver</span> og <span class="kode">onMouseOut</span>. 
+			Inni parentesen skriver vi navnet til funksjonen i javascriptet, samt argumentet som skal sendes med til 
+			denne funksjonen.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;a href="valg1.html" onMouseOver="velg('valg1')" onMouseOut="velg('')"&gt;Valg 1&lt;/a&gt;&lt;br&gt;<br>
+			&lt;a href="valg2.html" onMouseOver="velg('valg2')" onMouseOut="velg('')"&gt;Valg 2&lt;/a&gt;
+			</ul>
+			</div>
+			<center>
+			<a href="valg1.html" target="hoved" onMouseOver="velg('valg1')" onMouseOut="velg('')">Valg 1</a><br>
+			<a href="valg2.html" target="hoved" onMouseOver="velg('valg2')" onMouseOut="velg('')">Valg 2</a>
+			
+			<table width="177" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+	   		<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   			<table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="2"><tr><td>
+			  		<table width="100%" border="0" cellspacing="0" cellpadding="3">
+						<tr>
+					 	<td>
+					 		<div class="underoverskrift">Dynamisk tekstfelt</div>
+					 	</td>
+					 	</tr>
+						
+			  		 	<tr>
+			  		 	<td valign="top" background="bakgrunn_tekstfelt.jpg" width="100%" height="100">
+			  	  	 		<div id="tekstfelt" class="menyforklaring"></div>
+			  		 	</td>
+			  		 	</tr>
+			  		 </table>
+	   		  	</td></tr></table>
+	   		</td></tr></table>
+	   		</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			Du kan nå se at dette virker ved å peke på linkene. Som du sikkert har skjønt blir tekstfeltet tomt når vi 
+			tar musa bort fra linkene, fordi vi kaller på velg-funksjonen med et tomt argument. Dette fører til at det 
+			aldri vil bli satt noen verdi på <span class="kode">strText</span>-variabelen.<br><br>
+			
+			Hvis du nå lurer på hvordan teksten i tekstfeltet blir blå kan du finne svaret på <a href="css.html" target="hoved">CSS-siden</a>.
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

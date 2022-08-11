@@ -1,0 +1,1480 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./kap7_files/filelist.xml">
+<link rel=Edit-Time-Data href="./kap7_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Designing The User Interface</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>IT-Senteret</o:Author>
+  <o:LastAuthor>IT-Senteret</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>339</o:TotalTime>
+  <o:LastPrinted>2000-11-15T11:57:00Z</o:LastPrinted>
+  <o:Created>2001-11-14T12:27:00Z</o:Created>
+  <o:LastSaved>2001-11-14T12:27:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>2054</o:Words>
+  <o:Characters>11711</o:Characters>
+  <o:Company>Høgskolen i Molde</o:Company>
+  <o:Lines>97</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>14381</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Abadi MT Condensed Light";
+	mso-font-alt:"Arial Narrow";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{mso-style-update:auto;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:32.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l1 level1 lfo9;
+	tab-stops:list 32.15pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{mso-style-update:auto;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:46.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l0 level1 lfo10;
+	tab-stops:list 46.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoListContinue, li.MsoListContinue, div.MsoListContinue
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoListContinue2, li.MsoListContinue2, div.MsoListContinue2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:28.3pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Book Antiqua";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:NO-BOK;}
+p.Overskrift1, li.Overskrift1, div.Overskrift1
+	{mso-style-name:"Overskrift 1";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	font-weight:bold;}
+p.Overskrift2, li.Overskrift2, div.Overskrift2
+	{mso-style-name:"Overskrift 2";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-126;
+	mso-list-type:simple;
+	mso-list-template-ids:210642156;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 3";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:46.3pt;
+	mso-level-number-position:left;
+	margin-left:46.3pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:-125;
+	mso-list-type:simple;
+	mso-list-template-ids:656425698;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-style-link:"List Bullet 2";
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:32.15pt;
+	mso-level-number-position:left;
+	margin-left:32.15pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:69616395;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1965552142 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:70586247;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1342388910 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:101271986;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-669323952 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:115563340;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2072166702 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:115758756;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1016751542 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:167909995;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1423474240 68419599 68419609 68419611 68419599 68419609 68419611 68419599 68419609 68419611;}
+@list l7:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l7:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l8
+	{mso-list-id:288245655;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1058067650 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:310214215;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1958922048 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l9:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l10
+	{mso-list-id:393743094;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1326334770 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l11
+	{mso-list-id:545262511;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-966255402 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:553543826;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-242702300 67698703 68419585 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l12:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l12:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:662663648;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1150123918 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:704140889;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-666080964 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l15
+	{mso-list-id:725908952;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-242702300 68419585 68419585 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l15:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l16
+	{mso-list-id:756286845;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1951911420 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l17
+	{mso-list-id:804589389;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1089354478 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l17:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l18
+	{mso-list-id:822895207;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1292199736 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l19
+	{mso-list-id:860820273;
+	mso-list-type:hybrid;
+	mso-list-template-ids:59300112 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l19:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l20
+	{mso-list-id:901404149;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1503642164 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l21
+	{mso-list-id:1028991195;
+	mso-list-type:hybrid;
+	mso-list-template-ids:964478434 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:1082993973;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-155135286 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:1267467613;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-847710330 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l24
+	{mso-list-id:1457330734;
+	mso-list-type:hybrid;
+	mso-list-template-ids:528384522 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l24:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l25
+	{mso-list-id:1531843476;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1459710828 68419599 68419609 68419611 68419599 68419609 68419611 68419599 68419609 68419611;}
+@list l25:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l26
+	{mso-list-id:1639677354;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1732130800 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l26:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l27
+	{mso-list-id:1680616465;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1413689360 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l27:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l28
+	{mso-list-id:1712611225;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2073086864 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l28:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l29
+	{mso-list-id:1836072331;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2031083048 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l29:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l30
+	{mso-list-id:1942175771;
+	mso-list-type:hybrid;
+	mso-list-template-ids:282238638 68419585 68419587 68419589 68419585 68419587 68419589 68419585 68419587 68419589;}
+@list l30:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-GB style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<div style='border-top:solid gray 1.5pt;border-left:none;border-bottom:solid gray 1.5pt;
+border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<p class=MsoBodyText style='border:none;mso-border-top-alt:solid gray 1.5pt;
+mso-border-bottom-alt:solid gray 1.5pt;padding:0cm;mso-padding-alt:1.0pt 0cm 1.0pt 0cm'><span
+lang=NO-BOK style='font-family:"Arial Black"'>Kapittel 7</span><span
+lang=NO-BOK> – Menyvalg, skjema og dialogbokser</span><span lang=NO-BOK
+style='font-family:"Book Antiqua"'><o:p></o:p></span></p>
+
+</div>
+
+<p class=Overskrift1><span lang=NO-BOK>7.1 Innledning</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når man ikke kan
+lage gode modeller med Direkte Manipulasjon, er menyvalg og skjema et bra
+alternativ. Menyer er effektive, fordi de gjør at brukerne kan gjenkjenne
+kommandoene ved at de listes opp på en strukturert måte. Brukerne slipper å
+huske kommandosyntaksen, slik de må med et kommandobasert system. Dette gjør at
+menyvalg er spesielt effektivt for brukere med liten erfaring med systemet.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>7.2 Oppgaverelatert organisering</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Hovedmålet for
+designeren når det gjelder meny, skjema og dialogbokser er å lage en fornuftig,
+forståelig og bekvem organisering som i tillegg er lett å gjenkjenne og
+relevant til oppgaven brukeren skal gjøre.<o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.2.1 Enkeltmeny</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>En enkeltmeny har kun én liste med to eller
+flere valg. Eller det kan være en rekke med checkbokser hvor brukeren kan velge
+flere elementer. Enkeltmenyer kan deles inn i flere grupper:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Binær meny</span></i><span lang=NO-BOK style='font-size:
+     11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>En binær meny er den simpleste meny
+     av alle. Den består av kun to valg, for eksempel ja/nei, true/false, mann/kvinne.
+     I kommandobaserte systemer blir disse valgene ofte representert av en
+     enkelt bokstav, for eksempel <b>B</b> Black and white og <b>C</b> Color.
+     Her kan brukeren velge mellom sort-hvitt bilde eller fargebilde ved å
+     trykke enten <b>B</b> eller <b>C</b>. I grafiske brukergrensesnitt (GUI)
+     blir ofte radioknapper brukt for slike menyer.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Flervalgsmenyer og checkbokser</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>En annen
+     variant av enkeltmenyer er hvor brukerne kan velge flere elementer
+     samtidig. Vanligvis brukes checkbokser til dette, som på en lottokupong.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Rullegardin (pull-down) og pop-up meny</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Pop-up menyer
+     dukker opp på skjermen når man klikker på et bestemt objekt. Siden pop-up
+     menyer<span style="mso-spacerun: yes">  </span>dekker en del av skjermen,
+     er det ønskelig å ha en komprimert menytekst.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Scrolling og todimensjonale menyer</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Noen ganger
+     har man behov for en meny med flere elementer enn det er plass til i en
+     rekke nedover skjermen. Én løsning er å lage en trestrukturert meny. Men
+     det kan være mest hensiktsmessig å ha alt i én kolonne av og til. Man kan
+     da lage en meny som kan scrolles, for eksempel en listboks. På websider
+     kan det være mest hensiktmessig å bruke flere kolonner for å spare
+     brukeren for mye scrolling.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Alfabetiske scrollbarer</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Når en liste innholder veldig mange
+     elementer blir det vanskelig å finne fram. Man kan da lage en alfabetisk
+     scrollboks, hvor man først kan scrolle fram til den forbokstaven man er
+     ute etter og begynne letingen der. Alfabetiske scrollbarer kan brukes på
+     lister med veldig mange elementer før det blir uoversiktlig. Ti- og
+     hundretusener elementer går fint.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Innkapslede linker (Embeded links)</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Alle menyene
+     ovenfor er <span style='color:#339966'>explicit</span> (faste, bestemte)
+     menyer. Menyvalg kan også være innkapslet i tekst. Dette er prinsippet for
+     hypertekstdokumenter. Dette har også blitt benyttet i flygerledersystemer,
+     hvor man kan velge ut spesielle fly fra et oversiktsbilde (som viser hvor
+     alle flyene over flyplassen befinner seg) og få opp detaljinformasjon om
+     dette osv.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo19;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Ikonbaserte menyer, verktøylinjer og paletter</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'><span style="mso-spacerun: yes">     </span>Disse menyene
+     kan utføre handlinger med kun ett klikk. Dette er svært hensiktsmessig på
+     funksjoner som er mye brukt.<i><o:p></o:p></i></span></li>
+</ul>
+
+<p class=Overskrift2><span lang=NO-BOK>7.2.2 Lineær sekvens og flermenyer</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo20;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Menyer med lineær sekvens leder
+     brukerne gjennom en kompleks prosess med flere valg ved å presentere ett
+     valg om gangen. Ofte brukt på installasjonsprogrammer og såkalte wizards.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo20;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Flermenyer er bruk av
+     tabkontroll, for eksempel som i skjemaet kantlinjer og skyggelegging i MS
+     Word. Brukeren kan sette opp kantlinjer og skyggelegging i én operasjon.
+     Rekkefølgen på valgene er helt fritt. Dette bidrar til en raskere bruk av
+     menyene.<o:p></o:p></span></li>
+</ul>
+
+<p class=Overskrift2><span lang=NO-BOK>7.2.3 Trestrukturerte menyer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når antallet valg
+i menyen blir stort, og det blir vanskelig å organisere menyen med teknikkene
+ovenfor, kan man samle valg med lignende kategori under hverandre i en
+trestruktur. Selv en slik organisering fører til uenigheter. Ikke én
+strukturering passer alle brukerne, men over tid vil brukerne venne seg til
+strukturen. Trestrukturering gjør at nybegynnere kan finne fram i store mengder
+valg.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Dybde er antall
+nivåer. Bredde er antall valg per nivå. Når dybden kommer opp i et antall av
+fire til fem, er det fort gjort at brukerne går seg vill i menystrukturen.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>7.3 Sekvensen på hvordan valgene
+presenteres</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo21;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Tid</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Kronologisk rekkefølge etter tid<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo21;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Numerisk</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Stigende eller synkende rekkefølge<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo21;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Fysiske egenskaper</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Stigende eller synkende etter lengde, areal, volum,
+     temperatur, vekt osv<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når det ikke
+finnes noen direkte sammenheng mellom valgene kan man sortere etter:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo22;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Alfabetisk</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Stigende eller synkende rekkefølge<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo22;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Grupper valg som har lignende
+     handling</span></i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+     10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><span
+     style="mso-spacerun: yes">     </span>Bruk mellomrom eller strek for å
+     skille gruppene<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo22;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Frekvens</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>De mest brukte valgene kommer først<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo22;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Viktighet</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>De viktigste valgene kommer først<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>7.4 Responstid og frekvens på displayet</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo23;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Responstid</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'> er den tid det tar for
+     systemet å begynne visning av informasjon som respons på et valg brukeren
+     har gjort.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo23;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Frekvens på displayet (display
+     rate)</span></i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+     10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'> er her hvor
+     raskt menyene blir vist.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l5 level1 lfo23;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=NO-BOK>Dype menyer blir irriterende hvis
+responstiden er treg, fordi man må gjøre mange valg før man kommer til
+kommandoen man ønsker å utføre.</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l5 level1 lfo23;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=NO-BOK>Hvis responstiden er treg, bør
+designeren plassere flere elementer per nivå for å redusere antallet nivåer man
+må bla seg gjennom.</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l5 level1 lfo23;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=NO-BOK>Brede menyer (lang liste) blir
+irriterende hvis displayraten er treg, pga all teksten og grafikken som må
+vises per nivå.</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l5 level1 lfo23;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=NO-BOK>Hvis displayraten er treg, bør
+designeren plassere færre elementer per nivå.</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l5 level1 lfo23;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span lang=NO-BOK>Hvis både responstiden og
+displayraten er treg, er bruk av menyer generelt irriterende. Da blir
+kommandobasert grensesnitt mer aktuelt.</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>7.5 Rask bevegelse i menyer</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Selv med kort responstid og høy
+displayrate kan erfarne brukere bli irriterte hvis de må gjennom mange menyvalg
+for å gjøre en enkelt handlig. I stedet for å lage et kommandobasert
+grensesnitt for erfarne og ekspertbrukere, kan vi forbedre menyen.</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l19 level1 lfo24;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=NO-BOK>Tilby typeahead-teknikk</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l19 level1 lfo24;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=NO-BOK>Gi menyene en tast som tilordnes navnet, for eksempel </span><u><span
+lang=NO-BOK style='font-family:"Courier New"'>F</span></u><span lang=NO-BOK
+style='font-family:"Courier New"'>il</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l19 level1 lfo24;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+lang=NO-BOK style='mso-bidi-font-family:"Courier New"'>Tilby makromuligheter</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK style='mso-bidi-font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.5.1 Menyer med typeahead: BLT
+tilnærmelsen</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Brukeren trenger ikke å vente på at
+menyene blir vist. Man kan bare taste inn en tekststreng på tastaturet for å
+foreta menyvalgene. Denne teknikken har blitt kjent som BLT-tilnærmelsen, der
+BLT står for bacon, lettuce and tomato sandwich. Denne teknikken krever at
+brukerne husker tekststrengen i hodet, men hvis de glemmer disse er det bare å
+se på menyene igjen. Teknikken er svært hensiktsmessig når responstiden eller
+displayraten er treg.</span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.5.2 Menynavn eller bokmerker for
+direkte tilgang</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Brukerne kan følge menyene, men hvis de
+vet navnet på menyvalgene kan de skrive dette inn og gå dit direkte. Denne
+teknikken er hensiktsmessig når brukerne har behov for å huske bare noen få
+navn.</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Dette ligger svært nær teknikken som
+brukes i web browsere, bokmerker. Her kan brukerne lagre en internettadresse i
+en liste. Ved å klikke på oppføringen til denne adressen, har det samme
+funksjon som å skrive den inn. Bakdelen med denne teknikken er at listen fort
+blir veldig lang og uoversiktlig. Designeren må da tilby en hierarkisk
+struktureringsmulighet.</span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.5.3 Makroer og verktøylinjer</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Brukere som benytter menyvalg veldig
+mye vil foretrekke makrofunksjoner for å tilordne en sekvens av menyvalg til et
+lite program som kalles makro. Makroene kan senere kjøres, og de utfører da
+sekvensen med menyvalg som er lagret. Makroer kan ofte tilordnes en knapp på
+verktøylinjen for rask tilgang.</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>7.6 Meny layout</span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.6.1 Tittel</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Valg av tittel/navn på menyene er en
+vanskelig oppgave, som krever nøye gjennomtenking. Et viktig moment er
+konsistent navngiving. Når en bruker velger ”Linker” fra en meny på en
+hjemmeside, skal siden som kommer opp ha overskriften ”Linker” og ikke noe annet
+som for eksempel ”Her er viktige steder på nettet”. Samme prinsipp gjelder i
+designing av programmer.</span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.6.2 Språket i menyene</span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l24 level1 lfo25;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol;mso-bidi-font-style:italic'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=NO-BOK>Konsistent terminologi</span></i><span
+lang=NO-BOK><span style="mso-spacerun: yes">     </span>Vær svært nøye med å
+velge en terminologi som brukergruppen kan forstå. Lag en liste over ord som
+skal brukes, slik at man lettere kan ha en konsistent språkbruk.<i><o:p></o:p></i></span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l24 level1 lfo25;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol;mso-bidi-font-style:italic'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=NO-BOK>Forskjell mellom valgene</span></i><span
+lang=NO-BOK><span style="mso-spacerun: yes">     </span>Sørg for at hvert valg
+er forskjellig fra alle andre. Ikke bruk setninger/ord med omtrent samme
+betydning. Dette gjør at brukerne blir i tvil om hva de skal velge. Grupper
+heller lignende valg.<i><o:p></o:p></i></span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l24 level1 lfo25;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol;mso-bidi-font-style:italic'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=NO-BOK>Konsis terminologi</span></i><span
+lang=NO-BOK><span style="mso-spacerun: yes">     </span>Ikke bruk lange
+setninger for å forklare et valg hvis ett ord kan være nok. For eksempel er det
+bedre å bruke kun ”Dyr” enn ”Informasjon om dyr”.<i><o:p></o:p></i></span></p>
+
+<p class=MsoBodyText2 style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:
+l24 level1 lfo25;tab-stops:list 36.0pt'><![if !supportLists]><span lang=NO-BOK
+style='font-family:Symbol;mso-bidi-font-style:italic'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><i><span lang=NO-BOK>Stikkord til venstre</span></i><span
+lang=NO-BOK><span style="mso-spacerun: yes">     </span>Prøv å la det relevante
+ordet komme først, for eksempel ”Size of type” i stedet for ”Set the type
+size”. Dette gjør at brukeren kan finne det valget han er ute etter mye
+raskere, fordi man skumleser menyvalgene. Det er da naturlig at man leser det
+første ordet først.<i><o:p></o:p></i></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.6.3 Grafisk layout og design</span></p>
+
+<p class=MsoBodyText2><span lang=NO-BOK>Designeren bør ha en liste over følge
+ting for å kunne lage en konsistent layout på menyene:</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo26;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Tittel</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Noen liker at tittelen på en meny er sentrert, men
+     venstrejustert tittel er også vanlig.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo26;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Justering av elementene</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Det er vanlig at elementene i en meny er venstrejustert.
+     En blank linje eller en strek lager grupperinger av menyvalgene. Hvis man
+     har behov for å bruke flere kolonner på én meny, bør rekkefølgen av
+     valgene følge kolonnene. Det er lettere å skumlese nedover en kolonne enn
+     bortover rader.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo26;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Instruksjoner</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Instruksjonene bør være identiske for alle menyene, og
+     bør være plassert på samme sted.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l13 level1 lfo26;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Feilmeldinger</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Alle feilmelinger bør ha konsistent terminologi, og bør
+     plasseres på samme sted.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shapetype id="_x0000_t202"
+  coordsize="21600,21600" o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t202" style='position:absolute;
+  margin-left:-4.95pt;margin-top:7.05pt;width:423pt;height:207pt;z-index:1'
+  fillcolor="silver" strokeweight="4.5pt">
+  <v:stroke linestyle="thickThin"/>
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <ul style='margin-top:0cm' type=disc>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Bruk semantikk relatert til oppgaven som
+          skal utføres (enkel, lineær sekvens, trestruktur, asyklisk
+          graf/nettverk)<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Foretrekk bred og lav, fremfor smal og
+          dyp<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Vis posisjon ved hjelp av grafikk, tall
+          eller tittel<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Bruk tittel som overskrift på undermenyer<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Grupper valgene meningsfullt<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Ha en meningsfull sekvens på valgene<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Skriv det relevante stikkordet først i et
+          valg<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Bruk konsistent grammatikk, layout og
+          terminologi<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Tilby typeahead og/eller hurtigtaster<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Tilby valg for å gå tilbake til
+          hovedmenyen og til forrige valg<o:p></o:p></span></li>
+      <li class=MsoNormal style='mso-list:l4 level1 lfo27;tab-stops:list 36.0pt'><span
+          lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+          font-family:"Book Antiqua"'>Vurder online hjelp; nye teknikker for
+          valg; optimal responstid, displayrate og størrelse på skjermbilde<o:p></o:p></span></li>
+     </ul>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:0;left:-10px;top:6px;width:572px;height:290px'><img
+ width=572 height=284 src="./kap7_files/image001.gif"
+ alt="Text Box: ·&#9;Bruk semantikk relatert til oppgaven som skal utføres (enkel, lineær sekvens, trestruktur, asyklisk graf/nettverk)&#13;&#10;·&#9;Foretrekk bred og lav, fremfor smal og dyp&#13;&#10;·&#9;Vis posisjon ved hjelp av grafikk, tall eller tittel&#13;&#10;·&#9;Bruk tittel som overskrift på undermenyer&#13;&#10;·&#9;Grupper valgene meningsfullt&#13;&#10;·&#9;Ha en meningsfull sekvens på valgene&#13;&#10;·&#9;Skriv det relevante stikkordet først i et valg&#13;&#10;·&#9;Bruk konsistent grammatikk, layout og terminologi&#13;&#10;·&#9;Tilby typeahead og/eller hurtigtaster&#13;&#10;·&#9;Tilby valg for å gå tilbake til hovedmenyen og til forrige valg&#13;&#10;·&#9;Vurder online hjelp; nye teknikker for valg; optimal responstid, displayrate og størrelse på skjermbilde&#13;&#10;"
+ v:shapes="_x0000_s1026"></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";
+mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<b><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+NO-BOK;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span></b><br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=Overskrift1><span lang=NO-BOK>7.7 Skjema</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når vi har behov
+for å angi data som navn, tall osv, er tastaturet en velegnet innenhet. Når
+mange felt med data skal angis, er skjema en teknikk å foretrekke.<o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.7.1 Retningslinjer for designing av
+skjema</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Meningsfull tittel</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Identifiser emnet. Ikke bruk dataterminologi.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Forståelige instruksjoner</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Beskriv brukerens oppgaver i en kjent terminologi. Vær
+     kortfattet; hvis mer detaljerte forklaringer er nødvendig, lag noen
+     hjelpeskjermer som nybegynnere lett kan nå. For eksempel skriv kun
+     ”Adresse:” i stedet for ”Skriv inn adressen:”. I engelskspråklige systemer
+     bruk ”type” når det gjelder innskriving av data, og ”press” når det
+     gjelder trykking på taster som </span><span lang=NO-BOK style='font-size:
+     11.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New"'>TAB</span><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>, </span><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New"'>ENTER</span><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>, </span><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Courier New"'>F1</span><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'> osv. Siden </span><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>ENTER</span><span lang=NO-BOK style='font-size:11.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:
+     Arial'> vanligvis forbindes med spesialtasten, unngå å bruk dette ordet i
+     sammenhenger som for eksempel ”Enter the adress”. Bruk heller ”Type the
+     adress”.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Logisk gruppering og rekkefølge
+     på feltene</span></i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+     10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><span
+     style="mso-spacerun: yes">     </span>Felt som hører sammen skal stå
+     ganske tett. Bruk et mellomrom for å skille grupper av felt. Rekkefølgen
+     på feltene skal være logisk, for eksempel poststed etter postnummer.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Visuelt utsende på skjemaet</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>La feltene dekke skjemaet. Ikke plasser mange felt i ett
+     område og la andre områder være tomme. Rett justering av feltene gir et
+     profesjonelt utsende, og er med på å gjøre skjemaet forståelig. Hvis
+     brukerne jobber med et tilsvarende skjema på papir, skal feltene plasseres
+     likt som på papiret.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Bruk kjente ord til
+     forklaringene av feltene</span></i><span lang=NO-BOK style='font-size:
+     11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:
+     Arial'><span style="mso-spacerun: yes">     </span>Hvis for eksempel
+     feltet poststed blir kalt hjemsted vil brukerne bli frustrerte, og
+     misforståelser vil oppstå. <i>HUSK: Der feil kan gjøres, blir feil gjort.</i><o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Konsistent terminologi</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Lag en liste med ord som brukes, slik at man ikke bruker
+     ulike ord med samme eller omtrent samme betydning på ulike steder i
+     skjemaet.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Størrelse på feltene</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Brukerne skal kunne se på størrelsen på feltene hvor
+     mange tegn som kan/skal skrives inn. For eksempel kan man bruke understrek
+     for å vise antall tegn i tekstbaserte grensesnitt. I grafiske grensesnitt
+     må lengden på tekstbokser og lignende tilpasses lengden av det som skal skrives
+     inn.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Forståelig flytting av markøren</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Bruk </span><span lang=NO-BOK style='font-size:11.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Courier New"'>TAB</span><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'> tasten eller piltastene.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Feiloppretting av enkelttegn og
+     hele felt</span></i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+     10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><span
+     style="mso-spacerun: yes">     </span>Tilby bruk av </span><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>BACKSPACE</span><span lang=NO-BOK style='font-size:11.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:
+     Arial'> og </span><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+     10.0pt;font-family:"Courier New"'>INSERT</span><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";
+     mso-bidi-font-family:Arial'> tastene.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Motarbeid feil før de oppstår</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Dersom dette er mulig skal man unngå at brukeren taster
+     inn tekst i inputfelt for tall og lignende.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Feilmeldinger på uaksepterte
+     verdier</span></i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+     10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><span
+     style="mso-spacerun: yes">     </span>Hvis brukeren taster inn en feil
+     verdi, skal han få beskjed om dette idet fokus forlater det aktuelle
+     feltet.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Valgfrie felt skal merkes</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Skriv ”Valgfritt/Optional” bak valgfrie felt. Motsatt har
+     det blitt en standard å markere felt som ikke er valgfrie med en ”*”.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Eksempel på akseptabel verdi</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Hvis dette er mulig, vil det være en fordel om et
+     eksempel på akseptabel verdi vises på en konsistent plass i programmet, for
+     eksempel nederst i vinduet. Dette eksempelet skal vises så lenge fokus er
+     i det aktuelle feltet.<i><o:p></o:p></i></span></li>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo28;tab-stops:list 36.0pt'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Målsignal</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Det skal være klart for brukerne hva man skal gjøre når
+     man er ferdig. Generelt skal ikke skjemaet lukkes automatisk når siste
+     felt er innskrevet. <i><o:p></o:p></i></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.7.2 Listbokser og combobokser</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Hurtig valg fra
+lister kan oppnås med combobokser. Disse tilbyr mulighet for inntasting av
+innledende tegn, hvorpå comboboksen scroller til den første oppføringen som
+passer med inntastingen. Vanligvis er lister sortert alfabetisk for å støtte
+dette, men det kan av og til være hensiktsmessig at oppføringene i listen er
+gruppert etter visse kriterier.<o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>7.7.3 Kodede felt</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når data skal
+listes opp i kolonner kreves forskjellig justering på inntasting enn på visning
+av dataene. Tekst skal være venstrejustert på både inntasting og visning. Tall
+skal være venstrejustert på inntasting, men høyrejustert på visning.
+Desimaltall skal være justert etter desimalkomma på visning. Unngå visning av
+nuller foran tallet.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Tilby spesielle
+format der dette kreves:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo29;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>Telefonnummer: _ _<span style="mso-spacerun: yes"> 
+     </span>_ _<span style="mso-spacerun: yes">  </span>_ _<span
+     style="mso-spacerun: yes">  </span>_ _<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo29;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>Mobilnummer: _ _ _<span style="mso-spacerun: yes"> 
+     </span>_ _<span style="mso-spacerun: yes">  </span>_ _ _<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo29;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>Tid: _ _ : _ _<span style="mso-spacerun: yes">  </span>_ _
+     (9:45 AM eller PM)<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo29;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>Dato: _ _ / _ _ / _ _ (04/22/98 betyr April 22, 1998)<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo29;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Courier New"'>Pengebeløp: Kr _ _ _ _ _.00<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Courier New"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>7.8 Dialogbokser</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Dialogbokser skal
+dukke opp i nærheten av<span style="mso-spacerun: yes">  </span>det området de
+er relatert til. Det er derfor en risiko for at de dekker relevant informasjon.
+Dialogbokser skal derfor være så små som mulig for å dekke et så lite område av
+informasjon som mulig. Prøv også å unngå at dialogboksene dukker opp oppå
+informasjon som er relevant for dialogboksen.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når oppgavene
+blir komplekse, kan det være ønskelig å benytte såkalte tabbed dialog boxes.
+Disse kan ha mellom 2 og 20 folder. Eksempel på en tabbed dialog box er
+skjemaet Kantlinjer og skyggelegging i Microsoft Word. En fare med denne
+teknikken er at brukerne kan få problemer med å finne det de er ute etter.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1027" type="#_x0000_t202"
+ style='position:absolute;margin-left:-4.8pt;margin-top:4.6pt;width:423pt;
+ height:225pt;z-index:2' fillcolor="silver" strokeweight="4.5pt">
+ <v:stroke linestyle="thickThin"/>
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=Overskrift1 style='margin:0cm;margin-bottom:.0001pt'><span
+    lang=NO-BOK style='font-family:"Book Antiqua";mso-bidi-font-family:"Times New Roman"'>Intern
+    layout: som med menyer og skjema<o:p></o:p></span></p>
+    <ul style='margin-top:0cm' type=disc>
+     <li class=MsoNormal style='mso-list:l23 level1 lfo30;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Meningsfull tittel, konsistent stil<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l23 level1 lfo30;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Sekvens fra øverst til venstre, og til
+         høyre bunn<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l23 level1 lfo30;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Konsistent layout (marger, grid, linjer,
+         bokser)<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l23 level1 lfo30;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Konsistent terminologi, font, justering,
+         bruk av store bokstaver<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l23 level1 lfo30;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Standard knapper (OK, Avbryt)<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l23 level1 lfo30;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Motarbeide feil med direkte manipulasjon<o:p></o:p></span></li>
+    </ul>
+    <p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+    10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=Overskrift1 style='margin:0cm;margin-bottom:.0001pt'><span
+    lang=NO-BOK style='font-family:"Book Antiqua";mso-bidi-font-family:"Times New Roman"'>Eksterne
+    forhold<o:p></o:p></span></p>
+    <ul style='margin-top:0cm' type=disc>
+     <li class=MsoNormal style='mso-list:l22 level1 lfo31;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Myk visning av åpning og lukking<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l22 level1 lfo31;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Liten størrelse overlapper mindre område<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l22 level1 lfo31;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Visning nær relatert informasjon<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l22 level1 lfo31;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Ikke overlapp relatert informasjon<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l22 level1 lfo31;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Gjør dialogboksen lett å forsvinne<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l22 level1 lfo31;tab-stops:list 36.0pt'><span
+         lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+         font-family:"Book Antiqua"'>Lett å skjønne hvordan godta innstillinger
+         og avbryte<o:p></o:p></span></li>
+    </ul>
+    <p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+    10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:1;left:-9px;top:3px;width:572px;height:311px'><img width=572
+height=308 src="./kap7_files/image002.gif"
+alt="Text Box: Intern layout: som med menyer og skjema&#13;&#10;·&#9;Meningsfull tittel, konsistent stil&#13;&#10;·&#9;Sekvens fra øverst til venstre, og til høyre bunn&#13;&#10;·&#9;Konsistent layout (marger, grid, linjer, bokser)&#13;&#10;·&#9;Konsistent terminologi, font, justering, bruk av store bokstaver&#13;&#10;·&#9;Standard knapper (OK, Avbryt)&#13;&#10;·&#9;Motarbeide feil med direkte manipulasjon&#13;&#10;&#13;&#10;Eksterne forhold&#13;&#10;·&#9;Myk visning av åpning og lukking&#13;&#10;·&#9;Liten størrelse overlapper mindre område&#13;&#10;·&#9;Visning nær relatert informasjon&#13;&#10;·&#9;Ikke overlapp relatert informasjon&#13;&#10;·&#9;Gjør dialogboksen lett å forsvinne&#13;&#10;·&#9;Lett å skjønne hvordan godta innstillinger og avbryte&#13;&#10;&#13;&#10;"
+v:shapes="_x0000_s1027"></span><![endif]><span lang=NO-BOK style='font-size:
+11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:
+Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

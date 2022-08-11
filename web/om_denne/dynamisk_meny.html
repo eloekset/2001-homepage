@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk meny</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk meny</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<span class="underoverskrift">del 1</span>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_meny_2.html" target="hoved">del 2</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_meny_3.html" target="hoved">del 3</a>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="ingress">
+			Dette eksempelet viser i hovedsak hvordan man kan vise og skjule deler av en tabell ved å reagere på 
+			at man klikker på et bilde i tabellen. Bildene som brukes i dette eksempelet finner du nedenfor. Du kan laste 
+			dem ned ved å høyreklikke på dem og velge &quot;Lagre bilde som...&quot;.<br>
+			</div>
+			
+			<div class="tekst">
+			<ul>
+			opp.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="opp.gif"><br>
+			opp_on.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="opp_on.gif"><br>
+			ned.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="ned.gif"><br>
+			ned_on.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="ned_on.gif"><br>
+			bakgrunn_overskrift.jpg:&nbsp;&nbsp;&nbsp;&nbsp;<img src="bakgrunn_overskrift.jpg"><br>
+			</ul>
+			Vi begynner med HTML-koden som setter opp tabellen. Hvis du trenger hjelp til å forstå bruken av nøstede 
+			tabeller kan du lese eksempelet <a href="overskrift1.html" target="hoved">&quot;Tabeller med overskriftsceller&quot;</a> 
+			på HTML-seksjonen.
+			</div>
+			<div class="kode">
+			<ul><font color="#ff0000">
+			&lt;table width="176" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td valign="top"&gt;<br>
+	   		&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"&gt;&lt;tr&gt;&lt;td&gt;<br>
+				<ul>&lt;table cellpadding="0" cellspacing="0" border="0" width="100%"&gt;<br>
+				&lt;tr&gt;<br>
+					<ul>&lt;td&gt;&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br>
+						<ul>&lt;td&gt;&lt;span class="meny"&gt;Diverse&lt;/span&gt;&lt;/td&gt;<br>
+						&lt;td width="9" valign="middle"&gt;&lt;img src="opp.gif" alt="Klikk for å vise/skjule" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+				&lt;/td&gt;<br></ul>
+				&lt;/tr&gt;<br>
+				&lt;tr&gt;&lt;td height="1"&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+				&lt;tr bgcolor="#D1E1F1"&gt;<br>
+					<ul>&lt;td&gt;<br>
+						<ul>&nbsp;&nbsp;&nbsp;&lt;a href="hoved.html" target="hoved" class="menyvalg"&gt;Hovedside&lt;/a&gt;&lt;br&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;a href="humor.html" target="hoved" class="menyvalg"&gt;Humorside&lt;/a&gt;&lt;br&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;a href="venner.html" target="hoved" class="menyvalg"&gt;Venner's hjemmesider&lt;/a&gt;&lt;br&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;a href="logg.html" target="hoved" class="menyvalg"&gt;Logg&lt;/a&gt;<br></ul>
+					&lt;/td&gt;<br></ul>
+				&lt;/tr&gt;<br>
+				&lt;/table&gt;<br></ul>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>	   
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</font></ul>
+			</div>
+			<center>
+			<table width="176" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   		<table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td><table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"><tr>
+					<td><span class="meny">Diverse</span></td>
+					<td width="9" valign="middle"><img src="opp.gif" id="velger_diverse" alt="Klikk for å vise/skjule" width="12" height="12"></td></tr></table>
+				</td>
+			</tr>
+			<tr id="skille_diverse"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_diverse">
+				<td>
+				&nbsp;&nbsp;&nbsp;<a href="hoved.html" target="hoved" class="menyvalg">Hovedside</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="humor.html" target="hoved" class="menyvalg">Humorside</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="venner.html" target="hoved" class="menyvalg">Venner's hjemmesider</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="logg.html" target="hoved" class="menyvalg">Logg</a>
+				</td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   		</td></tr></table>
+			</td></tr></table>
+			</td></tr></table>
+			</center>	
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Nå skal vi gi de forskjellige delene av tabellen et navn, slik at vi kan gjøre forandringer på disse med javascriptet vi 
+			skal lage senere. Vi angir navnet til radene med egenskapen <span class="kode">id</span>.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;table width="176" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td valign="top"&gt;<br>
+	   		&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"&gt;&lt;tr&gt;&lt;td&gt;<br>
+				<ul>&lt;table cellpadding="0" cellspacing="0" border="0" width="100%"&gt;<br>
+				&lt;tr&gt;<br>
+					<ul>&lt;td&gt;&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br>
+						<ul>&lt;td&gt;&lt;span class="meny"&gt;Diverse&lt;/span&gt;&lt;/td&gt;<br>
+						&lt;td width="9" valign="middle"&gt;&lt;img src="opp.gif" <font color="#ff0000">id="velger_diverse"</font> alt="Klikk for å vise/skjule" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+				&lt;/td&gt;<br></ul>
+				&lt;/tr&gt;<br>
+				&lt;tr <font color="#ff0000">id="skille_diverse"</font>&gt;&lt;td height="1"&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+				&lt;tr bgcolor="#D1E1F1" <font color="#ff0000">id="under_diverse"</font>&gt;<br>
+					<ul>&lt;td&gt;<br>
+						<ul>&nbsp;&nbsp;&nbsp;&lt;a href="hoved.html" target="hoved" class="menyvalg"&gt;Hovedside&lt;/a&gt;&lt;br&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;a href="humor.html" target="hoved" class="menyvalg"&gt;Humorside&lt;/a&gt;&lt;br&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;a href="venner.html" target="hoved" class="menyvalg"&gt;Venner's hjemmesider&lt;/a&gt;&lt;br&gt;<br>
+						&nbsp;&nbsp;&nbsp;&lt;a href="logg.html" target="hoved" class="menyvalg"&gt;Logg&lt;/a&gt;<br></ul>
+					&lt;/td&gt;<br></ul>
+				&lt;/tr&gt;<br>
+				&lt;/table&gt;<br></ul>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>	   
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</ul>				
+			</div>
+			<div class="tekst">
+			Jeg valgte å kalle den andre raden i tabellen for &quot;skille_diverse&quot;, fordi dette er den blå streken som skiller  
+			overskriftscellen fra menyvalgene i diverse-menyen. &quot;under_diverse&quot; ble valgt fordi dette er linkene som ligger under 
+			diverse-menyen.<br> 
+			Det er alt som skal til av HTML i denne omgang. I del 2 lager vi javascriptet som utfører endringer på tabellen, 
+			og i del 3 lager vi hendelsene som kaller på denne funksjonen.
+			<p align="right"><a href="dynamisk_meny_2.html" target="hoved">-&gt;del 2</a></p>
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

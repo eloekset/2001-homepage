@@ -1,0 +1,490 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./kap3_files/filelist.xml">
+<title>Designing The User Interface</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>IT-Senteret</o:Author>
+  <o:LastAuthor>IT-Senteret</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>128</o:TotalTime>
+  <o:LastPrinted>2000-11-15T11:57:00Z</o:LastPrinted>
+  <o:Created>2001-11-14T12:27:00Z</o:Created>
+  <o:LastSaved>2001-11-14T12:27:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>463</o:Words>
+  <o:Characters>2644</o:Characters>
+  <o:Company>Høgskolen i Molde</o:Company>
+  <o:Lines>22</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>3247</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Abadi MT Condensed Light";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Overskrift1, li.Overskrift1, div.Overskrift1
+	{mso-style-name:"Overskrift 1";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	font-weight:bold;}
+p.Overskrift2, li.Overskrift2, div.Overskrift2
+	{mso-style-name:"Overskrift 2";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:115758756;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1016751542 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:545262511;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-966255402 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:607086520;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2019279530 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:822895207;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1292199736 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:827477198;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2034247666 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5
+	{mso-list-id:1185485090;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-629239396 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1540898572;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-307307836 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1712611225;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2073086864 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:1836072331;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2031083048 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body lang=EN-GB style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<div style='border-top:solid gray 1.5pt;border-left:none;border-bottom:solid gray 1.5pt;
+border-right:none;padding:1.0pt 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='border:none;mso-border-top-alt:solid gray 1.5pt;
+mso-border-bottom-alt:solid gray 1.5pt;padding:0cm;mso-padding-alt:1.0pt 0cm 1.0pt 0cm'><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Arial Black";
+mso-bidi-font-family:Arial'>Kapittel 3</span><span lang=NO-BOK
+style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial'> – Design
+prosessen<o:p></o:p></span></p>
+
+</div>
+
+<p class=Overskrift1><span lang=NO-BOK>3.2 Organisert design rettet mot
+brukervennlighet</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Design er en prosess, det er ikke en tilstand og kan ikke
+     bli fullgod uten utvikling.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Design prosessen kan ikke gjøres fra topp til bunn i et
+     grensesnitt. Det totale bildet må passe på alle måter.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo6;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Design involverer alltid oppdagelser av nye mål.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>3.3 Designets tre pilarer </span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>De tre pilarene kan hjelpe systemarkitekter
+til å gjøre gode idéer til suksessfulle systemer.<o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>3.3.1 Retningslinjer og prosesser</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>En del av Apple’s suksess med Macintosh var
+systemets tidlige retningslinjer for design av standardkomponenter på tvers av
+mange programmer. Hvert system har forskjellige behov, men retningslinjer for
+standardisering bør lages for:<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo7;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Ord og ikoner<o:p></o:p></span></li>
+ <ul style='margin-top:0cm' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Terminologi (objekter og handling)<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Skrifttyper<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Ikoner, grafikk og tykkelse på linjer<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Bruk av farger, bakgrunner, fremheving ved valg, og
+      blinking<o:p></o:p></span></li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo7;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Layout av skjermen<o:p></o:p></span></li>
+ <ul style='margin-top:0cm' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Menyer, skjemaer, dialogbokser<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Prompt, tilbakemelding, feilmelinger<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Justering, tomme områder, marger<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Format på inndata og utdata<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Bruk og innhold i topptekster og bunntekster<o:p></o:p></span></li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo7;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Innenheter og utenheter<o:p></o:p></span></li>
+ <ul style='margin-top:0cm' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Tastatur, skjermoppløsning, pekerbruk<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Lyder, tilbakemeling med lyd<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Responstiden på de ulike oppgavene<o:p></o:p></span></li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo7;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Handlingsrelatert design<o:p></o:p></span></li>
+ <ul style='margin-top:0cm' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Direkte manipulasjon, klikk, dra og slipp<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Syntaks på kommandoer, semantikk<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Programmerbare funksjonstaster<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Feilbehandling og gjenopprettingsprosedyrer<o:p></o:p></span></li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo7;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Opplæring<o:p></o:p></span></li>
+ <ul style='margin-top:0cm' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Online hjelp og tutorials<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo7;tab-stops:list 72.0pt'><span
+      lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+      "Book Antiqua"'>Opplæringsbøker og referansemanualer<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>3.3.2 Verktøy for design av
+brukergrensesnitt</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Et problem med design av interaktive
+systemer er at brukerne ikke vet hvordan systemet vil se ut når det er ferdig.
+Siden systemene av og til er ukjente, er det ikke sikkert brukerne forstår
+bruken av ulike teknikker. Dessverre er det vanskelig, tidkrevende og dyrt å
+endre et brukergrensesnitt når systemet først er ferdig.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>3.3.3 Vurdering av eksperter og test av
+brukervennlighet</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Før et system legges ut for salg, må det
+testes av eksperter og gjennomsnittsbrukere.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>3.4 Metoder for systemutvikling</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>LUCID står for Logical User-Centered
+Interactive Design Methodology.<o:p></o:p></span></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Utvikle et produktkonsept<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Utfør undersøkelser og bruksanalyser<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Lag designprototyp av grensesnittet<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Utfør design av grensesnittet fullt ut<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Implementer programmeringen<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo8;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Utvikle support for systemet<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>3.5 Etniske observasjoner</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Forberedelser<o:p></o:p></span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Forstå politikk og arbeidskulturen<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Gjør deg kjent med systemet og historien<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Lag mål og forbered spørsmål<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo9;tab-stops:list 36.0pt'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Få tilgang og lov til å observere systemet og intervjue<o:p></o:p></span></li>
+</ul>
+
+<p class=Overskrift1><span lang=NO-BOK>3.9 Spørsmål om lover</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Under en prosess av systemutvikling må man
+ta hensyn til lover og regler. Datasystemer skal ofte behandle konfidensielle
+data. Det er viktig at dataene kan lagres og brukes under sikre omstendigheter.
+Flysystemer og kjernekraftsystemer må også være svert pålitelige.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>For at en systemutvikler skal kunne tjene
+penger, må han ha kopirettighetene til systemet. Men ikke alt materiale er egne
+for kopibeskyttelse. Materiale som farge, skrifttyper, linjer og bokser kan
+ikke kopibeskyttes. Dersom man ikke kan få kopirettigheter til et
+brukergrensesnitt, kan det være en mulighet å ta patent på det. Mange mener at
+brukergrensesnitt ikke bør kopibeskyttes, men heller delt med andre slik at
+standarder på grensesnittene kan oppnås.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

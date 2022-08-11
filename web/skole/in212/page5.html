@@ -1,0 +1,164 @@
+<!doctype html public "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Generator" content="Microsoft Publisher 2000">
+<title>Sidens tittel</title>
+</head>
+<body bgcolor="#ffffff" link="#0000ff" vlink="#ff0000" text="#000000"  topmargin=0 leftmargin=0>
+<a name=top></a>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td><img src="_blnk.gif" width=94 height=1></td>
+<td><img src="_blnk.gif" width=9 height=1></td>
+<td><img src="_blnk.gif" width=65 height=1></td>
+<td><img src="_blnk.gif" width=432 height=1></td>
+<td><img src="_blnk.gif" width=24 height=1></td>
+<td><img src="_blnk.gif" width=65 height=1></td>
+<td><img src="_blnk.gif" width=10 height=1></td>
+</tr>
+<tr>
+<td width=94 height=93></td>
+<td width=9></td>
+<td width=65></td>
+<td width=432></td>
+<td width=24></td>
+<td width=65></td>
+<td width=10></td>
+</tr>
+<tr>
+<td height=2></td>
+<td width=605 height=2 colspan=6 rowspan=1 valign=top align=left>
+<img width=605 height=2 border=0 src="img7.gif"></td>
+</tr>
+<tr>
+<td height=8></td>
+<td colspan=6></td>
+</tr>
+<tr>
+<td height=452></td>
+<td></td>
+<td width=586 height=452 colspan=4 rowspan=1 valign=top align=left>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=585 height=451 valign=top align=left bgcolor=#ffffff>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=3 height=3></td>
+<td width=578></td>
+<td width=3></td>
+</tr>
+<tr>
+<td height=444></td>
+<td width=578 height=444 valign=top align=left>
+
+<p align=left><font face="Verdana" color=#000000 size=2>Rapportobjekter skal man tenke nøye etter om man vil ha med eller ikke. Kvittering i POS-systemet er et godt eksempel på er rapportobjekt.<br>Kvitteringen er en rapport på et salg. All informasjon i et eventuelt kvitteringsobjekt finnes i / hentes fra de andre objektene i modellen. Det vil derfor føre til dobbellagring, noe man bør unngå.<br>Kvitteringen utgjør også en del av "business rules". Den gir kunden rett til å levere varen tilbake. Vi har derfor én god grunn til ikke å ha kvittering som en egen klasse, og én god grunn for å ha det.<br><br></font><font face="Verdana" size=2><B>Hvordan lage domenemodeller:<br>
+
+<ol type=1 start=1>
+<font color=#836967 size=1><li></font></B></font><font face="Verdana" size=2>Lag en liste over potensielle konseptuelle klasser ved å bruke CCCL- og substantivmetodene<br></li><font color=#836967 size=1><li></font>Tegn dem inn i en domenemodell<br></li><font color=#836967 size=1><li></font>Lag relasjoner for å representere forholdet mellom klassene.<br></li><font color=#836967 size=1><li></font>Legg til attributtene som skal til for å dekke informasjonskravene.<br></li>
+</ol>
+<br>En alternativ metode som kan være nyttig, er å bruke analysemønstrene som vi lærer i senere kapitler.<br><br>Regler for karttegning kan brukes på domenemodeller:<br>
+
+<ul>
+<font color=#836967 size=2><li></font>Bruk navn som allerede finnes i prosjektet<br></li><font color=#836967 size=2><li></font>Ikke ta med irrelevante funksjoner<br></li><font color=#836967 size=2><li></font>Ikke legg til ting som ikke finner / er der / hører hjemme<br></li>
+</ul>
+<br>En vanlig feil er å føre opp konsept som attributter, når det egentlig skulle vært en klasse. Hvis vi ikke kan tenke på et konsept X som tekst eller tall i den virkelige verden, så er X sannsynligvis en konseptuell klasse og ikke en attributt.<br></font>
+</td>
+<td></td>
+</tr>
+<tr>
+<td height=3></td>
+<td colspan=2></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+
+</td>
+<td></td>
+</tr>
+<tr>
+<td height=27></td>
+<td colspan=6></td>
+</tr>
+<tr>
+<td height=237></td>
+<td colspan=2></td>
+<td width=456 height=237 colspan=2 rowspan=1 valign=top align=left>
+<img width=456 height=237 border=0 src="img10.gif"></td>
+<td colspan=2></td>
+</tr>
+<tr>
+<td height=27></td>
+<td colspan=6></td>
+</tr>
+<tr>
+<td height=172></td>
+<td></td>
+<td width=586 height=172 colspan=4 rowspan=1 valign=top align=left>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=585 height=171 valign=top align=left bgcolor=#ffffff>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=3 height=3></td>
+<td width=578></td>
+<td width=3></td>
+</tr>
+<tr>
+<td height=164></td>
+<td width=578 height=164 valign=top align=left>
+
+<p align=left><font face="Verdana" color=#000000 size=2>Her er butikk og flyplass verken tall eller tekst i virkeligheten, men noe fysisk som tar opp plass. Da skal det være konseptuelle klasser i modellen. <br>Hvis man er i tvil, lag en klasse.<br><br>I domenemodeller for salg, produkter, produksjon er det vanlig å lage en klasse "Produktspesifikasjon" og en klasse "Produkt". Produktklassen representerer hvert enkelt fysiske produkt (i for eksempel butikken), mens Produktspesifiksjonsklassen lagrer alle spesifikasjoner for hver produktgruppe.<br>Slik sparer man mye dobbellagring, samt at man kan ha tilgang til spesifikasjonene til et produkt som er utsolgt og lignende.<br></font>
+</td>
+<td></td>
+</tr>
+<tr>
+<td height=3></td>
+<td colspan=2></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+
+
+</td>
+<td></td>
+</tr>
+<tr>
+<td height=9></td>
+<td colspan=6></td>
+</tr>
+<tr>
+<td height=1></td>
+<td width=605 height=1 colspan=6 rowspan=1 valign=top align=left>
+<img width=605 height=1 border=0 src="img2.gif"></td>
+</tr>
+<tr>
+<td height=22></td>
+<td colspan=3></td>
+<td width=99 height=22 colspan=3 rowspan=1 valign=top align=left>
+<map name="map389">
+<area shape="rect" coords="0,0,99,22" href="page6.html">
+<area shape="rect" coords="0,0,99,22">
+</map>
+<img width=99 height=22 border=0 src="img11.gif" usemap="#map389"></td>
+</tr>
+</table>
+
+<a name=bottom></a>
+</body>
+</html>
+

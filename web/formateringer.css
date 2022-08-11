@@ -1,0 +1,119 @@
+BODY { 
+	scrollbar-face-color: #8EB4DA;
+	scrollbar-shadow-color: #00215a;
+	scrollbar-highlight-color:#D0D7E1;
+	scrollbar-3dlight-color: #00215a;
+	scrollbar-darkshadow-color: #3870A8;
+	scrollbar-track-color: #2870A8;
+	scrollbar-arrow-color: #00215a;
+
+	background-color: #3870A8; color: #000000; 
+}
+
+.overskrift
+{
+    COLOR: #60CF2F;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: 800;
+    FONT-STYLE: normal
+}
+
+.underoverskrift
+{
+    COLOR: #60CF2F;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: 800;
+    FONT-STYLE: normal
+}
+
+.gjestebokheader
+{
+    COLOR: #60CF2F;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: normal;
+    FONT-STYLE: normal
+}
+
+.gjesteboknavn
+{
+    COLOR: #3870A8;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: 800;
+    FONT-STYLE: normal
+}
+
+.ingress
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold;
+    FONT-STYLE: normal
+}
+
+.tekst
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: normal;
+    FONT-STYLE: normal
+}
+
+.kode
+{
+ 	COLOR: #000000;
+	FONT-FAMILY: Courier New, Courier, Mono;
+	FONT-SIZE: 8pt;
+	FONT-WEIGHT: normal;
+	FONT-STYLE: normal
+}
+
+.menyforklaring
+{
+    COLOR: #3870A8;
+    FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: normal;
+    FONT-STYLE: normal
+}
+
+.meny
+{ 
+  	 text-decoration: none; 
+	 color: #3870A8; 
+	 font-size: 10pt; 
+	 font-weight: 800; 
+	 font-family: 'Verdana, Arial, Helvetica, Sans-Serif' 
+}
+
+a:active { text-decoration: none; color: #FFAD00; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a:link { text-decoration: none; color: #FFAD00; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a:visited { text-decoration: none; color: #FFAD00; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a:hover { text-decoration: underline; color: #FFAD00; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+
+a.meny:active { text-decoration: none; color: #FFDE94; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.meny:link { text-decoration: none; color: #FFAD00; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.meny:visited { text-decoration: none; color: #FFAD00; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.meny:hover { text-decoration: none; color: #FFDE94; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+
+a.menyvalg:active { text-decoration: none; color: #3870A8; font-size: 8pt; font-weight: 200; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.menyvalg:link { text-decoration: none; color: #3870A8; font-size: 8pt; font-weight: 200; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.menyvalg:visited { text-decoration: none; color: #3870A8; font-size: 8pt; font-weight: 200; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.menyvalg:hover { text-decoration: underline; color: #3870A8; font-size: 8pt; font-weight: 200; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+
+a.bilde:active { background-color: #3870A8; text-decoration: none; color: #FFDE94; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.bilde:link { background-color: #3870A8; text-decoration: none; color: #FFAD00; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.bilde:visited { background-color: #3870A8; text-decoration: none; color: #FFAD00; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.bilde:hover { background-color: #8EB4DA; text-decoration: none; color: #FFAD00; font-size: 10pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+
+a.gjestebok:active { text-decoration: none; color: #3870A8; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.gjestebok:link { text-decoration: none; color: #3870A8; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.gjestebok:visited { text-decoration: none; color: #3870A8; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+a.gjestebok:hover { text-decoration: underline; color: #3870A8; font-size: 8pt; font-weight: 800; font-family: 'Verdana, Arial, Helvetica, Sans-Serif' }
+body.hvit { scrollbar-face-color: #8EB4DA; scrollbar-shadow-color: #00215a; scrollbar-highlight-color:#D0D7E1; scrollbar-3dlight-color: #00215a; scrollbar-darkshadow-color: #3870A8; scrollbar-track-color: #2870A8; scrollbar-arrow-color: #00215a; background-color: #FFFFFF; color: #000000; }
+a {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: 800; color: FFAD00; text-decoration: none}

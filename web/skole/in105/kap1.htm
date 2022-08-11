@@ -1,0 +1,625 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Kap1_files/filelist.xml">
+<title>Designing The User Interface</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>IT-Senteret</o:Author>
+  <o:LastAuthor>IT-Senteret</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>148</o:TotalTime>
+  <o:LastPrinted>2000-11-15T11:57:00Z</o:LastPrinted>
+  <o:Created>2000-11-16T13:13:00Z</o:Created>
+  <o:LastSaved>2000-11-16T13:14:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1199</o:Words>
+  <o:Characters>6839</o:Characters>
+  <o:Company>Høgskolen i Molde</o:Company>
+  <o:Lines>56</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>8398</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Abadi MT Condensed Light";
+	panose-1:2 11 3 6 3 1 1 1 1 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Abadi MT Condensed Light";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Overskrift1, li.Overskrift1, div.Overskrift1
+	{mso-style-name:"Overskrift 1";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	font-weight:bold;}
+p.Overskrift2, li.Overskrift2, div.Overskrift2
+	{mso-style-name:"Overskrift 2";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:NO-BOK;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:115758756;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1016751542 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:545262511;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-966255402 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:822895207;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1292199736 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1712611225;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2073086864 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1836072331;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2031083048 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body lang=EN-GB style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoTitle>Designing The User Interface</p>
+
+<p class=MsoSubtitle><span lang=NO-BOK style='mso-ansi-language:NO-BOK'>Strategier
+for effektiv<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=NO-BOK
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:"Abadi MT Condensed Light"'>menneske
+- maskin<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=NO-BOK
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:"Abadi MT Condensed Light"'>kommunikasjon<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div style='border-top:solid gray 1.5pt;border-left:none;border-bottom:solid gray 1.5pt;
+border-right:none;padding:1.0pt 0in 1.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-top-alt:solid gray 1.5pt;
+mso-border-bottom-alt:solid gray 1.5pt;padding:0in;mso-padding-alt:1.0pt 0in 1.0pt 0in'><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Arial Black";
+mso-bidi-font-family:Arial'>Kapittel 1</span><span lang=NO-BOK
+style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial'> –
+Menneskelige faktorer i interaktiv programvare<o:p></o:p></span></p>
+
+</div>
+
+<p class=Overskrift1><span lang=NO-BOK>1.2 Mål for systemutvikling</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Et godt rykte
+kommer ikke av store ord og lovnader eller reklamekampanjer, men fra funksjoner
+med god kvalitet designet etter nøye planlegging, kartlegging av brukernes
+behov og grundig testing.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når et
+interaktivt system er godt designet blir brukergrensesnittet nesten usynlig.
+Dette gjør at brukerne kan konsentrere seg om arbeidet de skal utføre, heller
+enn hvordan dette skal utføres på systemet.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>U.S. militære
+standard for menneskelig design kriterier:<o:p></o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Oppnå nødvendig ytelse med <span
+     style='color:#FF6600'>operator, control, and maintenance personel</span><o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Minimer behov for kunnskap og
+     opplæringstid<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Oppnå nødvendig pålitelighet på
+     kombinasjoner av personell – maksin<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Lag standarder på
+     grensesnittdesign innenfor og på tvers av systemer<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Analyser på
+hvilke oppgaver som skal utføres er viktig, fordi systemer med feilrettet
+funksjonalitet blir dårlig mottatt og lite brukt. Hvis man bommer på
+funksjonaliteten, hjelper det lite om systemet har et godt brukergrensesnitt.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>For bred
+funksjonalitet er også et faremoment, fordi kompleksiteten fører til at
+systemet blir tungvint å bruke, og det blir unødvendig vanskelig å lære.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>1.2.3 Standardisering, itegrering,
+konsistens og portabilitet<span style='color:#FF6600'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal><i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Standardisering</span></i><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";
+mso-bidi-font-family:Arial'> referer til et standard brukergrensesnitt på tvers
+av flere applikasjoner.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Interasjon</span></i><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";
+mso-bidi-font-family:Arial'> på tvers av programpakker og applikasjoner var et
+av designprinsippene i Unix. Kommandospråket var standardisert fra starten av,
+men nå er det mange konkurrerende grafiske brukergrensesnitt (GUI) som bygger
+på X og Motif standardene.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Konsistens</span></i><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";
+mso-bidi-font-family:Arial'> brukes på kommandoer, setninger, knapper, layout,
+farger, osv. innenfor en applikasjon.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><i><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Portabilitet</span></i><span
+lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";
+mso-bidi-font-family:Arial'> går på å konvertere data og dele filer mellom
+ulike programmer på forskjellige plattformer. Dette kan være et problem å
+oppnå, fordi vi har ulike skjermoppløsninger, fargemuligheter, pekeredskaper,
+filformat etc. Kompabilitet mellom ulike versjoner av et program kan også være
+problematisk, fordi vi ønsker å legge til nye funksjoner som den gamle
+versjonen ikke har støtte for.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>1.3 Mål med brukergrensesnittdesign</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'>Disse fem menneskelige faktorene er viktig i
+evaluering:<o:p></o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Opplæringstid</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Hvor lang tid tar det for en typisk
+     person fra en spesiell brukergruppe å lære å bruke relevante kommandoer
+     for en spesiell oppgave?<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Hurtighet og ytelse</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Hvor lang tid tar det å utføre en
+     spesiell oppgave?<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Antall feil av brukerne</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Hvor mange og hvilke feil gjør
+     brukerne? Selv om tiden for å finne og rette opp feil inngår i hurtighet
+     og ytelse, er feilraten så viktig at man bør evaluere dette spesielt.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Hva som huskes over tid</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Hvor godt husker brukerne det de
+     skal gjøre etter en time, en dag, en uke? Dette har en ganske stor
+     sammenheng med opplæringstiden, og bruksfrekvensen gjør et stort utslag.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua"'>Subjektive oppfatinger</span></i><span lang=NO-BOK
+     style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:"Book Antiqua"'><span
+     style="mso-spacerun: yes">     </span>Hvor godt liker brukerne de
+     forskjellige delene av systemet? Svarene kan man få ved intervju eller
+     skriftlige brukerundersøkelser hvor skalaer for tilfredshet med systemet
+     inngår. Man kan også bruke egne felt hvor brukerne fritt kan kommentere
+     systemet.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>1.4 Motiver for menneskelige faktorer i
+design</span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>1.4.1 Livskritiske systemer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Eksempler på
+livskritiske systemer er flygerleder-systemer, kjernekraft reaktorer, base for
+romfart, politi- og brannvesen, militære operasjoner. Lang opplæringstid kan
+godtas mot at man oppnår god og feilfri ytelse, selv når brukerne er i
+stressede situasjoner. Subjektive oppfatinger er mindre viktig, fordi brukerene
+er godt motiverte når de bruker systemet. Brukerne husker hvordan systemet skal
+brukes, fordi hyppigheten er stor, og man har ofte øvelse.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>1.4.2 Industrielle og komersielle
+systemer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Typiske eksempler
+er banker, forsikring, ordrebestillinger, lagerledelse, fly og hotellservice,
+bilutleie, kredittkort. Her har prisen stor betydning. Lavere pris kan være
+viktigere enn tilliten til systemet (?????, javel). Dete er dyrt å drive
+opplæring, så opplæringstiden må være lav.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Dersom man oppnår
+10% mindre tid per transaksjon, får man 10% færre terminaler og 10% mindre
+utgifter i maskinvare.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>1.4.3 Kontor, hjemme og
+underholdningssystemer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Eksempler:
+Tekstbehandling, automatiske transaksjoner, dataspill, undervisningsprogrammer,
+e-post, data-konferanse. Å velge rett funksjonalitet er vanskelig. Nybegynnere
+har størst behov for små og lette handlinger, men når erfaringen øker, øker
+behovet for større funksjonalitet og god ytelse. Man kan designe systemet slik
+at forskjellige brukere finner seg tilrette i det samme systemet ved å tilby varierte
+muligheter for samme handling. Pris er viktig pga stor konkurranse.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift1><span lang=NO-BOK>1.5 Tilpasning av menneskelige faktorer</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når ett desig
+ikke kan tilpasses et bredt spekter av brukere, kan flere versjoner/utgaver av
+samme program eller tilpasning av brukergrensesnittet gjøres tilgjengelig.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Folk har
+forskjellig utgangspunkt når de skal bruke et datasystem. Noen liker å bruke
+datamaskiner, mens andre ser mørkt på det. Det er påvist fundamentale
+forskjeller mellom kvinner og menn, men det er vanskelig å peke på hvilke
+eksakte forskjeller det dreier seg om. Kvinner liker ofte andre dataspill enn
+menn, selv om det finnes mange unntak til hver av dem.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Når det gjelder
+kontorsystemer endser ofte ikke menn reaksjonen en kvinne kan ha på kommandoer
+som KILL en fil og ABORT et program.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>1.5.4 Kulturelle og internasjonale
+forskjeller</span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'>Det er ganske
+klart at brukere som<span style="mso-spacerun: yes">  </span>har lært å lese
+kinesisk eller japansk vil skumlese en skjem på en annen måte enn brukere som
+har lært engelsk eller fransk. Når man skal standardisere et system
+internasjonalt, må man tenke over følgende punkter:<o:p></o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Bokstaver, tall, spesialtegn<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Ventre-mot-høyre vs
+     høyre-mot-venstre lesning og skriving<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Dato og tidformat<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Nummeriske format og
+     valutaformat<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Vekt og mål<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Telefonnummer og adresser<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Navn og titler som Mr., Ms.,
+     Mme., M., Dr.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Sikkerhetsregeler, nasjonale
+     identifikasjoner, passnummer<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Bruk av store bokstaver og
+     tegnsetting<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Sortering<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Ikoner, knapper og farger<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo3;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Grammatikk og stavelse<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=Overskrift2><span lang=NO-BOK>1.5.5 Brukere med funksjonshemming</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo4;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Presenter prosedyrer,
+     henvisninger og verbale uttrykk på forskjellige nivåer, slik at de er
+     tilgjengelige for svaksynte.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo4;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Design tilbakemeldingen slik at
+     brukerne skjønner hvorfor feil oppstår og ikke bare at en feil har
+     oppstått.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo4;tab-stops:list .5in'><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Tilpass brukergrensesnittet til
+     brukernes mentale modeller av lignende systemer.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+  <p class=Overskrift1><span lang=NO-BOK>1.6 Mål for vårt fag</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Reduser angst for bruk av
+     datamaskiner</span></i><span lang=NO-BOK style='font-size:11.0pt;
+     mso-bidi-font-size:10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:
+     Arial'><span style="mso-spacerun: yes">     </span>Selv om datamaskiner er
+     mye brukt, finnes det folk som ikke liker eller klarer å bruke dem. Mange
+     som ellers er kompetente personer, nekter å bruke datamaskiner. Noen eldre
+     tar avstand fra hjelpemidler som bankterminaler og tekstbehandlere, fordi
+     de er redde for å ødelegge maskinen eller gjøre fatale feil.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Utvikling</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>En nybegynner har et annet forhold til hvordan
+     brukergrensesnittet bør være designet enn en som er ekspert. Når en
+     nybegynner lærer mer og beveger seg mot å bli ekspert, vil han føle behov
+     for å utføre ting raksere og ha tilgang til flere fasiliteter. En
+     ekspertbruker misliker stor bruk av feilmeldinger, plagsomme
+     hjelpefunksjoner og informerende tilbakemeldinger på hver minste funksjon.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Direkte manipulasjon</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Et visuelt grensesnitt der brukerne opererer med objekter
+     omtrent som i en virkelig verden. Denne typen grensesnitt er ekstremt
+     populære. Nøye studier gir svar på hvordan et slikt grensesnitt må
+     designes for at det skal være raskt og enkelt i bruk. Alle operasjoner må
+     kunne reverseres.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Inputenheter</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Design av nye inputenheter gir store muligheter for
+     systemutvikling. Mange spesielle inputenheter blir laget: Touchscreen,
+     penn, stemmestying, scanning av hornhinnen, datahanske, force-feedback
+     joystick.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Online hjelp</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Mange systemer tilbyr hjelp online, men vi vet lite om
+     hvilken type hjelp som egner seg best for både nybegynnere og
+     ekspertbrukere.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'><i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'>Søk etter informasjon</span></i><span
+     lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:
+     "Book Antiqua";mso-bidi-font-family:Arial'><span style="mso-spacerun:
+     yes">     </span>Surfing og søking etter informasjon på nettet blir stadig
+     mer vanlig. Dette gir et økt press for å få effektive verktøy til å finne
+     det man er ute etter. Brukerne har behov for å filtrere ut store mengder
+     urelevant informasjon for å finne det de er ute etter uten å gå seg vill i
+     den mengden som tilbys. Behovet for verktøy som søker etter tekst, bilder,
+     lyd og video vil øke i tiden fremover.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=NO-BOK style='font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:"Book Antiqua";mso-bidi-font-family:Arial'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

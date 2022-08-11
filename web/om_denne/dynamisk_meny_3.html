@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk meny</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+	
+	<script language="JavaScript">
+	
+			function vis_skjul(valg) {
+				if(document.all["under_" + valg].style.display == "none")
+				{
+				 	document.all["velger_" + valg].src = opp_on.src
+					document.all["under_" + valg].style.display = ''
+					document.all["skille_" + valg].style.display = ''
+				}
+				else
+				{
+				 	document.all["velger_" + valg].src = ned_on.src
+					document.all["under_" + valg].style.display = "none"
+					document.all["skille_" + valg].style.display = "none"
+				}
+			}
+			
+			function bytt_knapp(valg, on_off) {
+				if(on_off == "on")
+				{	 
+					if(document.all["velger_" + valg].src == ned.src)
+						document.all["velger_" + valg].src = ned_on.src
+					else if(document.all["velger_" + valg].src == opp.src)
+						document.all["velger_" + valg].src = opp_on.src
+				}
+				else if(on_off == "off")
+				{
+					if(document.all["velger_" + valg].src == ned_on.src)
+						document.all["velger_" + valg].src = ned.src
+					else if(document.all["velger_" + valg].src == opp_on.src)
+						document.all["velger_" + valg].src = opp.src				
+				}
+			}								
+			
+			function oppstart() {
+				opp = new Image()
+				opp_on = new Image()
+				ned = new Image()
+				ned_on = new Image()
+				
+				opp.src = "opp.gif"
+				opp_on.src = "opp_on.gif"
+				ned.src = "ned.gif"
+				ned_on.src = "ned_on.gif"
+			}
+	
+	</script>
+	
+</head>
+
+<body bgcolor="#3870a8" onLoad="oppstart()" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk meny</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<a href="dynamisk_meny.html" target="hoved">del 1</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_meny_2.html" target="hoved">del 2</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<span class="underoverskrift">del 3</span>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			Nå mangler bare html-koden som registrerer mus-hendelser og kaller på funksjonene vi laget i del 2. Vi tar 
+			nå utgangspunkt i den html-koden som vi skrev i del 1. Siden koden blir veldig uoversiktlig plukker jeg ut kun de 
+			linjene som skal forandres. Disse er her markert med blå skrift.
+			</div>
+			
+			<div class="kode">
+			<ul>
+			&lt;table width="176" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td valign="top"&gt;<br>
+	   		&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table cellpadding="0" cellspacing="0" border="0" width="100%"&gt;<br>
+			&lt;tr&gt;<br>
+				<font color="#0000ff"><ul>&lt;td&gt;&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br>
+					<ul>&lt;td&gt;&lt;span class="meny"&gt;Diverse&lt;/span&gt;&lt;/td&gt;<br>
+					&lt;td width="9" valign="middle"&gt;&lt;img src="opp.gif" id="velger_diverse" alt="Klikk for å vise/skjule" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+				&lt;/td&gt;<br></ul></font>
+			&lt;/tr&gt;<br>
+			&lt;tr id="skille_diverse"&gt;&lt;td height="1"&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+			&lt;tr bgcolor="#D1E1F1" id="under_diverse"&gt;<br>
+				<ul>&lt;td&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="hoved.html" target="hoved" class="menyvalg"&gt;Hovedside&lt;/a&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="humor.html" target="hoved" class="menyvalg"&gt;Humorside&lt;/a&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="venner.html" target="hoved" class="menyvalg"&gt;Venner's hjemmesider&lt;/a&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="logg.html" target="hoved" class="menyvalg"&gt;Logg&lt;/a&gt;<br>
+				&lt;/td&gt;<br></ul>
+			&lt;/tr&gt;<br>
+			&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>   
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</ul>				
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Når vi peker med musen på overskriftsraden i meny-tabellen skal knappen lyse opp for å markere at man skal klikke på denne for å 
+			vise/skjule menyen. Vi kaller derfor på funksjonen bytt_knapp. Vi må også passe på at vi stiller tilbake knappen når musen 
+			ikke lenger holdes over dette området.
+			</div>
+			<div class="kode">
+			<ul>			
+			&lt;td <font color="#ff0000">onMouseOver="bytt_knapp('diverse', 'on')" onMouseOut="bytt_knapp('diverse', 'off')"</font>&gt;&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br>
+					<ul>&lt;td&gt;&lt;span class="meny"&gt;Diverse&lt;/span&gt;&lt;/td&gt;<br>
+					&lt;td width="9" valign="middle"&gt;&lt;img src="opp.gif" id="velger_diverse" alt="Klikk for å vise/skjule" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+			&lt;/td&gt;<br>			
+			</ul>				
+			</div>
+			<div class="tekst">
+						 
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Når vi klikker på bildet skal vi kalle på funksjonen som viser/skjuler menyen.
+			</div>
+			<div class="kode">
+			<ul>			
+			&lt;td onMouseOver="bytt_knapp('diverse', 'on')" onMouseOut="bytt_knapp('diverse', 'off')"&gt;&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br>
+					<ul>&lt;td&gt;&lt;span class="meny"&gt;Diverse&lt;/span&gt;&lt;/td&gt;<br>
+					&lt;td width="9" valign="middle"&gt;&lt;img src="opp.gif" <font color="#ff0000">onClick="vis_skjul('diverse')"</font> id="velger_diverse" alt="Klikk for å vise/skjule" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+			&lt;/td&gt;<br>			
+			</ul>				
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Så var det koden som kaller på funksjonen oppstart før siden vises. Dette gjøres inni body-taggen med en heldelse som heter 
+			<span class="kode">onLoad</span>.
+			</div>
+			<div class="kode">
+			<ul><font color="#ff0000">
+			&lt;body onLoad="oppstart()"&gt;
+			</font></ul>
+			</div>
+			<div class="tekst">
+				 
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Hvis du henger med i svingene, så kan jeg si at verre var det ikke. Under følger koden i sin helhet, samt en fungerende 
+			demonstrasjon av hvordan det hele virker.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;html&gt;<br>
+			&lt;head&gt;<br><br>
+
+			<ul>
+			function vis_skjul(valg) {<br>
+				<ul>if(document.all["under_" + valg].style.display == "none")<br>
+				{<br>
+				 	<ul>document.all["velger_" + valg].src = opp_on.src
+					document.all["under_" + valg].style.display = ''
+					document.all["skille_" + valg].style.display = ''</ul>
+				}<br>
+				else<br>
+				{<br>
+				 	<ul>document.all["velger_" + valg].src = ned_on.src
+					document.all["under_" + valg].style.display = "none"
+					document.all["skille_" + valg].style.display = "none"</ul>
+				}<br></ul>
+			}<br><br>
+			</ul>
+			
+			<ul>
+			function bytt_knapp(valg, on_off) {<br>
+				<ul>if(on_off == "on")<br>
+				{<br>	 
+					<ul>if(document.all["velger_" + valg].src == ned.src)<br>
+						<ul>document.all["velger_" + valg].src = ned_on.src<br></ul>
+					else if(document.all["velger_" + valg].src == opp.src)<br>
+						<ul>document.all["velger_" + valg].src = opp_on.src<br></ul> 
+					</ul>
+				}<br>
+				else if(on_off == "off")<br>
+				{<br>
+					<ul>if(document.all["velger_" + valg].src == ned_on.src)<br>
+						<ul>document.all["velger_" + valg].src = ned.src<br></ul>
+					else if(document.all["velger_" + valg].src == opp_on.src)<br>
+						<ul>document.all["velger_" + valg].src = opp.src<br></ul>
+					</ul>				
+				}</ul>
+			}<br><br>
+			</ul>					
+			
+			<ul>
+			function oppstart() {<br>
+				<ul>opp = new Image()<br>
+				opp_on = new Image()<br>
+				ned = new Image()<br>
+				ned_on = new Image()<br><br>
+				
+				opp.src = "opp.gif"<br>
+				opp_on.src = "opp_on.gif"<br>
+				ned.src = "ned.gif"<br>
+				ned_on.src = "ned_on.gif"<br></ul>
+			}<br><br>
+			</ul>						
+			
+			&lt;/head&gt;<br><br>
+			
+			&lt;body onLoad="oppstart()"&gt;<br><br>
+			
+			<ul>
+			&lt;table width="176" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td valign="top"&gt;<br>
+	   		&lt;table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table cellpadding="0" cellspacing="0" border="0" width="100%"&gt;<br>
+			&lt;tr&gt;<br>
+				<ul>&lt;td onMouseOver="bytt_knapp('diverse', 'on')" onMouseOut="bytt_knapp('diverse', 'off')"&gt;&lt;table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"&gt;&lt;tr&gt;<br>
+					<ul>&lt;td&gt;&lt;span class="meny"&gt;Diverse&lt;/span&gt;&lt;/td&gt;<br>
+					&lt;td width="9" valign="middle"&gt;&lt;img src="opp.gif" onClick="vis_skjul('diverse')" id="velger_diverse" alt="Klikk for å vise/skjule" width="12" height="12"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+				&lt;/td&gt;<br></ul>
+			&lt;/tr&gt;<br>
+			&lt;tr id="skille_diverse"&gt;&lt;td height="1"&gt;&lt;/td&gt;&lt;/tr&gt;<br>
+			&lt;tr bgcolor="#D1E1F1" id="under_diverse"&gt;<br>
+				<ul>&lt;td&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="hoved.html" target="hoved" class="menyvalg"&gt;Hovedside&lt;/a&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="humor.html" target="hoved" class="menyvalg"&gt;Humorside&lt;/a&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="venner.html" target="hoved" class="menyvalg"&gt;Venner's hjemmesider&lt;/a&gt;&lt;br&gt;<br>
+				&nbsp;&nbsp;&nbsp;&lt;a href="logg.html" target="hoved" class="menyvalg"&gt;Logg&lt;/a&gt;<br>
+				&lt;/td&gt;<br></ul>
+			&lt;/tr&gt;<br>
+			&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>   
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</ul>				
+			
+			&lt;/body&gt;<br><br>
+			
+			&lt;/html&gt;
+			</ul>
+			</div>
+			
+			<center>
+			<table width="176" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   		<table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td onMouseOver="bytt_knapp('diverse', 'on')" onMouseOut="bytt_knapp('diverse', 'off')"><table background="bakgrunn_overskrift.jpg" width="100%" cellpadding="3" cellspacing="0" border="0"><tr>
+					<td><span class="meny">Diverse</span></td>
+					<td width="9" valign="middle"><img src="opp.gif" onClick="vis_skjul('diverse')" id="velger_diverse" alt="Klikk for å vise/skjule" width="12" height="12"></td></tr></table>
+				</td>
+			</tr>
+			<tr id="skille_diverse"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_diverse">
+				<td>
+				&nbsp;&nbsp;&nbsp;<a href="hoved.html" target="hoved" class="menyvalg">Hovedside</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="humor.html" target="hoved" class="menyvalg">Humorside</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="venner.html" target="hoved" class="menyvalg">Venner's hjemmesider</a><br>
+				&nbsp;&nbsp;&nbsp;<a href="logg.html" target="hoved" class="menyvalg">Logg</a>
+				</td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   		</td></tr></table>
+			</td></tr></table>
+			</td></tr></table>
+			</center>	
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

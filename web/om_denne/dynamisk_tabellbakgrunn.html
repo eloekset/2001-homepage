@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk tabellbakgrunn</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk tabellbakgrunn</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<span class="underoverskrift">del 1</span>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tabellbakgrunn_2.html" target="hoved">del 2</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tabellbakgrunn_3.html" target="hoved">del 3</a>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="ingress">
+			Dette eksempelet viser hvordan du kan forandre bakgrunnsfargen på en celle i en tabell når man peker på 
+			bildet som befinner seg i denne cella (eller forsåvidt hvilket som helst objekt på samme sida). Under 
+			finner du bildene som er brukt i eksempelet. Du kan laste dem ned ved å høyreklikke på dem og velge 
+			&quot;Lagre bilde som...&quot;.<br>
+			</div>
+			
+			<div class="tekst">
+			<ul>
+			epost.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="epost.gif"><br>
+			gjestebok_les.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="gjestebok_les.gif"><br>
+			gjestebok_skriv.gif:&nbsp;&nbsp;&nbsp;&nbsp;<img src="gjestebok_skriv.gif"><br>
+			</ul>
+			Vi begynner med HTML-koden som setter opp tabellen. Hvis du trenger hjelp til å forstå bruken av nøstede 
+			tabeller kan du lese eksempelet <a href="ramme1.html" target="hoved">&quot;Innramming av celler&quot;</a> 
+			på HTML-seksjonen.
+			</div>
+			<div class="kode">
+			<ul><font color="#ff0000">
+			&lt;table width="200" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+				<ul>&lt;table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3"&gt;<br>
+			  		<ul>&lt;tr&gt;<br>
+			  		&lt;td align="center"&gt;<br>
+			  	  		<ul>&lt;a href="mailto:eloekset@online.no"&gt;&lt;img src="epost.gif" width="31" height="29" border="0"&gt;&lt;/a&gt;<br></ul>
+			  		&lt;/td&gt;<br>
+			  		&lt;td align="center"&gt;<br>
+			  	  		<ul>&lt;a href="gjestebok_les.html"&gt;&lt;img src="gjestebok_les.gif" width="32" height="27" border="0"&gt;&lt;/a&gt;<br></ul>
+			  		&lt;/td&gt;<br>
+			  		&lt;td align="center"&gt;<br>
+			  	  		<ul>&lt;a href="gjestebok_skriv.html"&gt;&lt;img src="gjestebok_skriv.gif" width="32" height="32" border="0"&gt;&lt;/a&gt;<br></ul>
+			  		&lt;/td&gt;<br>
+			  		&lt;/tr&gt;<br></ul>
+			  	&lt;/table&gt;<br></ul>
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</font></ul>
+			</div>
+			<center>
+			<table width="200" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   		<table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+				<table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+			  		<tr>
+			  		<td align="center" id="epost">
+			  	  		<a href="mailto:eloekset@online.no"><img src="epost.gif" width="31" height="29" border="0"></a>
+			  		</td>
+			  		<td align="center" id="les">
+			  	  		<a href="gjestebok_les.html"><img src="gjestebok_les.gif" width="32" height="27" border="0"></a>
+			  		</td>
+			  		<td align="center" id="skriv">
+			  	  		<a href="gjestebok_skriv.html"><img src="gjestebok_skriv.gif" width="32" height="32" border="0"></a>
+			  		</td>
+			  		</tr>
+			  	</table>
+	   		</td></tr></table>
+			</td></tr></table>
+			</td></tr></table>
+			</center>	
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Nå skal vi gi cellene navnereferanser, slik at vi kan utføre handlinger på disse i form av å endre på egenskapen 
+			bakgrunnsfarge. Hver celle skal ha et eget navn. Dette angis med egenskapen <span class="kode">id</span>.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;table width="200" bgcolor="#3870A8" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+				<ul>&lt;table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3"&gt;<br>
+			  		<ul>&lt;tr&gt;<br>
+			  		&lt;td align="center" <font color="#ff0000">id="epost"</font>&gt;<br>
+			  	  		<ul>&lt;a href="mailto:eloekset@online.no"&gt;&lt;img src="epost.gif" width="31" height="29" border="0"&gt;&lt;/a&gt;<br></ul>
+			  		&lt;/td&gt;<br>
+			  		&lt;td align="center" <font color="#ff0000">id="les"</font>&gt;<br>
+			  	  		<ul>&lt;a href="gjestebok_les.html"&gt;&lt;img src="gjestebok_les.gif" width="32" height="27" border="0"&gt;&lt;/a&gt;<br></ul>
+			  		&lt;/td&gt;<br>
+			  		&lt;td align="center" <font color="#ff0000">id="skriv"</font>&gt;<br>
+			  	  		<ul>&lt;a href="gjestebok_skriv.html"&gt;&lt;img src="gjestebok_skriv.gif" width="32" height="32" border="0"&gt;&lt;/a&gt;<br></ul>
+			  		&lt;/td&gt;<br>
+			  		&lt;/tr&gt;<br></ul>
+			  	&lt;/table&gt;<br></ul>
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+			</ul>			
+			</div>
+			<div class="tekst">
+			Det er alt som skal til av HTML i denne omgang. I del 2 lager vi javascriptet som utfører endringer på tabellen, 
+			og i del 3 lager vi hendelsene som kaller på denne funksjonen.
+			<p align="right"><a href="dynamisk_tabellbakgrunn_2.html" target="hoved">-&gt;del 2</a></p>
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

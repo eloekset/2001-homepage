@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk tekstfelt</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk tekstfelt</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<span class="underoverskrift">del 1</span>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tekstfelt_2.html" target="hoved">del 2</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tekstfelt_3.html" target="hoved">del 3</a>
+	</td></tr></table>
+	
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="ingress">
+			I dette eksempelet vil du se hvordan man kan sette inn ønsket tekst i det graderte område i tabellen 
+			under. Man skal kunne bytte ut innholdet i tekstområdet uten å måtte laste ned hele websida på nytt. 
+			Dette er den simpleste form for DHTML, men kan være veldig praktisk i bruk.<br><br>
+			
+			<div class="tekst">
+			Her er bakgrunnsbildet som blir brukt på tekstfeltet. Du kan laste det ned ved å høyreklikke på det og velge 
+			&quot;Lagre bilde som...&quot;.
+			<ul>
+			bakgrunn_tekstfelt.jpg:&nbsp;&nbsp;&nbsp;&nbsp;<img src="bakgrunn_tekstfelt.jpg" width="163" height="3" border="0">
+			</ul>
+			</div>
+			
+			<div class="tekst">
+			Nedenfor ser du koden som 
+			skal til for å lage tabellen vist under. Hvis du trenger trenger hjelp til å forstå HTML-koden som er 
+			brukt i denne tabellen kan du lese eksempelet 
+			<a href="overskrift1.html" target="hoved">&quot;Tabeller med overskriftsceller&quot;</a> på HTML-seksjonen.
+			</div>
+			<div class="kode"><font color="#ff0000">
+			<ul>
+			&lt;table width="177" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   			<ul>&lt;table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			  		<ul>&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;<br>
+						<ul>&lt;tr&gt;<br>
+					 	&lt;td&gt;<br>
+					 		<ul>&lt;div class="underoverskrift"&gt;Dynamisk tekstfelt&lt;/div&gt;<br></ul>
+					 	&lt;/td&gt;<br>
+					 	&lt;/tr&gt;<br>
+						
+			  		 	&lt;tr&gt;<br>
+			  		 	&lt;td valign="top" background="bakgrunn_tekstfelt.jpg" width="100%" height="100"&gt;<br>
+			  	  	 		<ul>&lt;div class="menyforklaring"&gt;&lt;/div&gt;<br></ul>
+			  		 	&lt;/td&gt;<br>
+			  		 	&lt;/tr&gt;<br></ul>
+			  		 &lt;/table&gt;<br></ul>
+	   		  	&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul></font>
+			</div>
+			<center>
+			<table width="177" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"><tr><td>
+	   		<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+	   			<table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="2"><tr><td>
+			  		<table width="100%" border="0" cellspacing="0" cellpadding="3">
+						<tr>
+					 	<td>
+					 		<div class="underoverskrift">Dynamisk tekstfelt</div>
+					 	</td>
+					 	</tr>
+						
+			  		 	<tr>
+			  		 	<td valign="top" background="bakgrunn_tekstfelt.jpg" width="100%" height="100">
+			  	  	 		<div id="tekstfelt" class="menyforklaring"></div>
+			  		 	</td>
+			  		 	</tr>
+			  		 </table>
+	   		  	</td></tr></table>
+	   		</td></tr></table>
+	   		</td></tr></table>
+			</center>
+			<div class="tekst">
+			&nbsp;<br>
+			I de to div-objektene har jeg brukt <span class="kode">class="underoverskrift"</span> og 
+			<span class="kode">class="menyforklaring"</span>. Dette er referanser som nettleseren bruker for å 
+			formatere teksten etter CSS, og har ingen betydning for dette eksempelet. 
+			Les <a href="css.html" target="hoved">CSS-seksjonen</a> for å lære hvordan dette brukes.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Nå skal vi gi det dynamiske tekstfeltet en id, slik at javascriptet kan referere til dette objektet 
+			når vi skal endre innholdet i det.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;table width="177" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   		&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;&lt;tr&gt;&lt;td&gt;<br>
+	   			<ul>&lt;table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="2"&gt;&lt;tr&gt;&lt;td&gt;<br>
+			  		<ul>&lt;table width="100%" border="0" cellspacing="0" cellpadding="3"&gt;<br>
+						<ul>&lt;tr&gt;<br>
+					 	&lt;td&gt;<br>
+					 		<ul>&lt;div class="underoverskrift"&gt;Dynamisk tekstfelt&lt;/div&gt;<br></ul>
+					 	&lt;/td&gt;<br>
+					 	&lt;/tr&gt;<br>
+						
+			  		 	&lt;tr&gt;<br>
+			  		 	&lt;td valign="top" background="bakgrunn_tekstfelt.jpg" width="100%" height="100"&gt;<br>
+			  	  	 		<ul>&lt;div <font color="#ff0000">id="tekstfelt"</font> class="menyforklaring"&gt;&lt;/div&gt;<br></ul>
+			  		 	&lt;/td&gt;<br>
+			  		 	&lt;/tr&gt;<br></ul>
+			  		 &lt;/table&gt;<br></ul>
+	   		  	&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br></ul>
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+	   		&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			</ul>
+			</div>
+			<div class="tekst">
+			Ved hjelp av javascript kan vi nå sette inn alt vi vil av innhold mellom de to taggene 
+			<span class="kode">&lt;div&gt;&lt;/div&gt;</span>. Et slik div-objekt kan lages hvor som helst på websida. 
+			Du kan t.o.m. lage et lignende objekt på en linje med tekst. Da må du bruke 
+			<span class="kode">&lt;span id="tekstområde"&gt;&lt;/span&gt;</span> istedet for div.<br>
+			Gå til del 2 for å lese hvordan javascriptet lages.
+			<p align="right"><a href="dynamisk_tekstfelt_2.html" target="hoved">-&gt;del 2</a></p>
+			</div>
+			
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

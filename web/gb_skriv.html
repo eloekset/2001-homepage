@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Skriv innlegg i gjesteboka</title>
+	<link rel="STYLESHEET" href="formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Skriv innlegg i gjesteboka</div></td>
+	</tr>
+	</table>
+	
+	<img src="pixel.gif" width="1" height="5">
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+
+			<div class="ingress">
+			Fyll ut alle feltene og trykk send for å skrive et innlegg i gjesteboka.<br>
+			Etterpå kan du <a href="/cgi-bin/vis-interaktiv?gusloek/gb01" target="hoved">lese</a> meldingen.
+			</div>
+		
+			&nbsp;<br>
+			
+			<form method="post" target="hoved"  action="/cgi-bin/lag-innlegg?gusloek/gb01">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+			<tr>
+				<td><div class="tekst">Navn:</div></td>
+				<td><input type="2" name="0" size="30"></td>
+			</tr>
+			<tr>
+				<td><div class="tekst">Hjemsted:</div></td>
+				<td><input name="1" size="30"></td>
+			</tr>
+			<tr>
+				<td><div class="tekst">E-post:</div></td>
+				<td><input name="2" size="30"></td>
+			</tr>
+			<tr>
+				<td><div class="tekst">Hjemmeside:</div></td>
+				<td><input name="3" size="30" value="http://"></td>
+			</tr>
+			<tr>
+				<td valign="top"><div class="tekst">Melding:</div></td>
+				<td><textarea name="4" rows="6" cols="45"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type=submit value="Send">&nbsp;&nbsp;&nbsp;<input type=reset value="Nullstill"></td>
+			</tr>
+			
+			</table>
+			</form>
+			
+			&nbsp;<br>
+			
+			<div class="tekst">
+			Du kan godt bruke html-koder i meldingen. Hvis du vil ha linjeskift må du sette inn
+			&lt;br&gt istedet for å trykke enter-tasten.<br>
+			Jeg forbeholder meg retten til å gå inn å endre på innlegg som jeg synes er upassende
+			eller innholder html-koder som ødelegger gjesteboka.<br>
+			&nbsp;<br>
+			Det er viktig at hjemmesideadressen starter med http://
+			&nbsp;<br>
+			Innlegget ditt kommer <b>nederst</b> i gjesteboken hvis du <b>ikke</b> bruker Internet Explorer.
+			</div>
+						
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

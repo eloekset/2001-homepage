@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Cascading Style Sheets ;linkene </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0">
+<table width="100%" height="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="5">
+  <tr> 
+    <td valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+              <tr> 
+                <td> 
+                  <div align="center" class="overskrift">Cascading Style Sheets 
+                    ;linkene </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="5">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="3">
+              <tr> 
+                <td> 
+                  <p class="ingress">Her finner du koden jeg har brukt for &aring; 
+                    lage en dynamisk effekt p&aring; linkene. N&aring;r du peker 
+                    og klikker p&aring; en link, f&aring;r den en dekorativ linje 
+                    under teksten.</p>
+                  <p class="tekst">I tillegg til at denne linjen er &quot;pen&quot;, 
+                    gir den en visuell tilbakemelding om at dette er en link som 
+                    kan klikkes p&aring;. Det gj&oslash;r at siden blir lettere 
+                    &aring; bruke, fordi man ser bedre hva som er linker og hva 
+                    som er vanlig tekst.</p>
+                  <p class="tekst">Koden er veldig lett. Den eneste forskjellen 
+                    fra annen bruk av Cascading Style Sheets jeg har vist, er 
+                    at man bruker et kolon i klassenavnet for &aring; definere 
+                    de ulike tilstandene link-elementet er i. </p>
+                  <ul>
+                    <li class="tekst"><span class="kode">a:link</span> angir en 
+                      vanlig link </li>
+                    <li class="tekst"><span class="kode">a:hover</span> angir 
+                      at linken pekes p&aring; </li>
+                    <li class="tekst"><span class="kode">a:active</span> angir 
+                      at linken klikkes p&aring; </li>
+                    <li class="tekst"><span class="kode">a:visited</span> angir 
+                      at man tidligere har bes&oslash;kt siden det linkes til 
+                      <p class="kode">a:link<br>
+                        { <br>
+                        &nbsp;&nbsp;&nbsp;text-decoration: none; <br>
+                        &nbsp;&nbsp;&nbsp;color: #FFAD00; <br>
+                        &nbsp;&nbsp;&nbsp;font-size: 8pt; <br>
+                        &nbsp;&nbsp;&nbsp;font-weight: 800; <br>
+                        &nbsp;&nbsp;&nbsp;font-family: 'Verdana, Arial, Helvetica, 
+                        Sans-Serif' <br>
+                        }</p>
+                      <p class="kode">a:hover <br>
+                        { <br>
+                        &nbsp;&nbsp;&nbsp;text-decoration: underline; <br>
+                        &nbsp;&nbsp;&nbsp;color: #FFAD00; <br>
+                        &nbsp;&nbsp;&nbsp;font-size: 8pt; <br>
+                        &nbsp;&nbsp;&nbsp;font-weight: 800; <br>
+                        &nbsp;&nbsp;&nbsp;font-family: 'Verdana, Arial, Helvetica, 
+                        Sans-Serif' <br>
+                        }<br>
+                      </p>
+                      <p class="kode">a:active <br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;text-decoration: none; <br>
+                        &nbsp;&nbsp;&nbsp;color: #FFAD00; <br>
+                        &nbsp;&nbsp;&nbsp;font-size: 8pt; <br>
+                        &nbsp;&nbsp;&nbsp;font-weight: 800; <br>
+                        &nbsp;&nbsp;&nbsp;font-family: 'Verdana, Arial, Helvetica, 
+                        Sans-Serif' <br>
+                        }<br>
+                      </p>
+                      <p class="kode"> a:visited <br>
+                        { <br>
+                        &nbsp;&nbsp;&nbsp;text-decoration: none; <br>
+                        &nbsp;&nbsp;&nbsp;color: #FFAD00; <br>
+                        &nbsp;&nbsp;&nbsp;font-size: 8pt; <br>
+                        &nbsp;&nbsp;&nbsp;font-weight: 800; <br>
+                        &nbsp;&nbsp;&nbsp;font-family: 'Verdana, Arial, Helvetica, 
+                        Sans-Serif' <br>
+                        }<br>
+                      </p>
+                    </li>
+                  </ul>
+                <p>&nbsp;</p></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></body>
+</html>

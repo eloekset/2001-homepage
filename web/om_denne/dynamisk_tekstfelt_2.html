@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Dynamisk tekstfelt</title>
+	<link rel="STYLESHEET" href="../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center"><div class="overskrift">Dynamisk tekstfelt</div></td>
+	</tr>
+	</table>
+	<table align="right" width="150" border="0" cellspacing="0" cellpadding="3" bgcolor="#3870a8">
+	<tr><td bgcolor="#60cf2f"></td></tr>
+	<tr><td align="center">
+	<a href="dynamisk_tekstfelt.html" target="hoved">del 1</a>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<span class="underoverskrift">del 2</span>&nbsp;<font color="#60cf2f">|</font>&nbsp;
+	<a href="dynamisk_tekstfelt_3.html" target="hoved">del 3</a>
+	</td></tr></table>
+	&nbsp;<br>&nbsp;<br>
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%">
+		<!--Teksten i dokumentet starter her-->
+			<div class="tekst">
+			Javascriptet skal plasseres øverst i HTML-filen innenfor head-området til websida.
+			</div>
+			<div class="kode"><font color="#ff0000">
+			<ul>
+			&lt;html&gt;<br>
+			&lt;head&gt;<br><br>
+					<ul>&lt;script language="JavaScript"&gt;<br><br>
+					&lt;/script&gt;<br><br></ul>
+			&lt;/head&gt;<br><br></font>
+			...<br><br><font color="#ff0000">
+			&lt;/html&gt;
+			</ul></font>
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Først i javascriptet skal vi lage en funksjon med ett argument. Denne funksjonen skal kalles når 
+			man peker på et område på websida. Hvordan man kaller på funksjonen kommer vi tilbake til i del 3. 
+			Det som sendes med som argument til denne funksjonen er <i>hva</i> som pekes på i f.eks. menyen. 
+			Funksjonen skal da endre innholdet i tekstfelt etter hva som pekes på.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;script language="JavaScript"&gt;<br><font color="#ff0000">
+			function velg (valg) { <br>
+			
+			<br>}<br></font>
+			&lt;/script&gt;
+			</ul>
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Når vi skal bestemme hva som skal skrives ut i tekstfeltet spør vi argumentet til funksjonen, 
+			<span class="kode">valg</span>, hva denne inneholder. Når vi kaller på funksjonen sender vi med en 
+			liten tekststreng som indikerer hva som pekes på. F.eks. kan dette være &quot;valg1&quot;, &quot;valg2&quot;. 
+			Men det kan være hva som helst, bare du kjenner det igjen. Vi oppretter også en variabel <span class="kode">strText</span>, 
+			som lagrer teksten som skal skrives ut.
+			</div>
+			<div class="kode">
+			<ul>
+			&lt;script language="JavaScript"&gt;<br>
+			function velg (valg) { <br><font color="#ff0000">
+			<ul>
+				var strText = "";<br><br>
+				
+				if(valg == "valg1") {<br>
+				<ul>strText += "Dette er valg 1";<br></ul>
+				}<br>
+				if(valg == "valg2") {<br>
+				<ul>strText += "Dette er valg 2. &lt;br&gt;";<br>
+				strText += "Det er det andre valget.";<br></ul>
+				}<br>
+			</ul>
+			</font>}<br>
+			&lt;/script&gt;	
+			</ul>
+			</div>
+			<div class="tekst">
+			Som du ser kan man legge til så mange linjer man vil med tekst, bare man passer på å skrive <span class="kode">+=</span> 
+			for hver linje. Resultatet når du skriver ut denne tekststrengen blir likevel at all tekst kommer sammenhengende. Det 
+			registreres ikke noe linjeskift. Hvis du ønsker dette må du legge til en <span class="kode">&lt;br&gt;</span>-tag. Faktisk 
+			kan du legge til alt du ønsker av html-kode her! Så man kan gjøre ganske fansy ting hvis man ønsker.
+			</div>
+			
+			&nbsp;<br><hr color="#3870A8"><br>
+			
+			<div class="tekst">
+			Nå gjenstår det bare å skrive ut innholdet i <span class="kode">strText</span> til tekstfeltet. Dette gjøres med en enkelt 
+			linje.
+			<div>
+			<div class="kode">
+			<ul>
+			&lt;script language="JavaScript"&gt;<br>
+			function velg (valg) { <br>
+			<ul>
+				var strText = "";<br><br>
+				
+				if(valg == "valg1") {<br>
+				<ul>strText += "Dette er valg 1";<br></ul>
+				}<br>
+				if(valg == "valg2") {<br>
+				<ul>strText += "Dette er valg 2. &lt;br&gt;";<br>
+				strText += "Det er det andre valget.";<br></ul>
+				}<br><br>
+				<font color="#ff0000">
+				document.all["tekstfelt"].innerHTML = strText;<br>
+				</font>
+			</ul>
+			}<br>
+			&lt;/script&gt;	
+			</ul>
+			</div>
+			<div class="tekst">
+			Det denne linjen sier er at i dette dokumentet skal alle objekter som heter &quot;tekstfelt&quot; få tilsendt 
+			teksten som er lagret i variabelen <span class="kode">strText</span>. Enkelt og greit! :o)<br>
+			I dokumentet vårt har vi bare ett objekt som heter &quot;tekstfelt&quot;.<br><br>
+			
+			Vi må nå lage de objektene som skal kalle på denne funksjonen når de pekes på. Dette står i del 3.
+			<p align="right"><a href="dynamisk_tekstfelt_3.html" target="hoved">-&gt;del 3</a></p> 
+			</div>
+			
+						
+		<!--Teksten i dokumentet slutter her-->
+		</td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>
