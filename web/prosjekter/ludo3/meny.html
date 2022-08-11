@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="../../formateringer.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+	<script language="JavaScript">
+	function velg(url) {
+			 var strText = "";
+	
+			 if (url == "blank") {
+				strText = "";
+			 }
+			 else if (url == "om_prosjektet") {
+				  strText += "Generelt om prosjektet";
+			 }
+			 else if (url == "om_server") {
+				  strText += "Serverdelen av prosjektet";
+			 }
+			 else if (url == "om_klient") {
+				  strText += "Klientdelen av prosjektet";
+			 }
+			 else if (url == "hoved") {
+				  strText += "Hovedsiden";
+			 }
+			 else if (url == "logg") {
+			 	  strText += "Logg for hva som er endret i prosjektet og på prosjektsidene";
+			 }
+			 else if (url == "server_usecase") {
+				  strText += "Use Case diagram";
+			 }
+			 else if (url == "server_glossary") {
+				  strText += "Ordforklaringer til uttrykk brukt om serveren på disse sidene.";
+			 }			 
+			 else if (url == "klient_usecase") {
+				  strText += "Use Case diagram";
+			 }
+			 document.all["forklaring"].innerHTML = strText;
+	}	
+	</script>
+	
+	
+	
+	<script language="JavaScript">
+	
+	function vis_skjul (valg)
+	{
+		if(document.all["under_" + valg].style.display == "none")
+		{
+			document.all["velger_" + valg].src = minus_On.src
+			document.all["under_" + valg].style.display = ''
+			document.all["skille_" + valg].style.display = ''
+		}
+		else
+		{
+			document.all["velger_" + valg].src = pluss_On.src
+			document.all["under_" + valg].style.display = "none"
+			document.all["skille_" + valg].style.display = "none"
+		}
+	}
+	
+	function highlight (valg, on_off)
+	{
+		if(on_off == "on")
+		{
+			if(document.all["velger_" + valg].src == pluss.src)
+				document.all["velger_" + valg].src = pluss_On.src
+			else if(document.all["velger_" + valg].src == minus.src)
+				document.all["velger_" + valg].src = minus_On.src
+		}
+		else if(on_off == "off")
+		{
+			if(document.all["velger_" + valg].src == minus_On.src)
+				document.all["velger_" + valg].src = minus.src
+			else if(document.all["velger_" + valg].src == pluss_On.src)
+				document.all["velger_" + valg].src = pluss.src
+		}
+	}
+	
+	function oppstart () 
+	{
+		minus = new Image()
+		minus_On = new Image()
+		pluss = new Image()
+		pluss_On = new Image()
+
+		
+		minus.src = "../../minus_off.gif"
+		minus_On.src = "../../minus_on.gif"
+		pluss.src = "../../pluss_off.gif"
+		pluss_On.src= "../../pluss_on.gif"
+
+		
+		document.all["velger_prosjektet"].src = minus.src
+		document.all["velger_server"].src = minus.src
+		document.all["velger_klient"].src = minus.src
+	}
+	
+	</script>	
+</head>
+
+<body onload="javascript:oppstart();" bgcolor="#FFFFFF" text="#000000" leftmargin="5" topmargin="0">
+
+<p align="center"><a href="index.html" target="_top"><img src="ludo_logo_liten.jpg" width="125" height="37" border="0"></a></p>	   	   
+	   
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#ffffff"><tr><td>	   
+	   
+	   <!--Overskrift-->
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+	   <tr>
+	   <td valign="top">
+	   	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+		   <tr>
+		   	   <td width="100%" bgcolor="#3870a8" align="center"><div class="underoverskrift">Meny</div></td>
+	   	   </tr>
+	   	   </table>
+	   </td>
+	   </tr>
+	   </table>
+	   <!--Overskrift slutt-->
+   
+
+	   <!--tabellen rundt menyelementene-->
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="../../menybakgrunn.jpg" onMouseOver="velg('om_prosjektet'), highlight('prosjektet', 'on')" onMouseOut="velg('blank'), highlight('prosjektet', 'off')">
+				<img src="../../pluss_off.gif" id="velger_prosjektet" onClick="vis_skjul('prosjektet')" alt="Klikk for å vise/skjule" width="14" height="9"><span class="meny">Prosjektet</span>
+				</td>
+			</tr>
+			<tr id="skille_prosjektet"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_prosjektet">
+				      <td> &nbsp;<img src="../../link.gif" width="9" height="7"><a href="hoved.html" target="hoved" class="menyvalg" onMouseOver="velg('hoved')" onMouseOut="velg('blank')">Hovedside</a><br>
+					       &nbsp;<img src="../../link.gif" width="9" height="7"><a href="logg.html" target="hoved" class="menyvalg" onMouseOver="velg('logg')" onMouseOut="velg('blank')">Logg</a></td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+	   <!-- Menyelement slutt -->
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="../../menybakgrunn.jpg" onMouseOver="velg('om_server'), highlight('server', 'on')" onMouseOut="velg('blank'), highlight('server', 'off')">
+				<img src="../../pluss_off.gif" id="velger_server" onClick="vis_skjul('server')" alt="Klikk for å vise/skjule" width="14" height="9"><span class="meny">Server</span>
+				</td>
+			</tr>
+			<tr id="skille_server"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_server">
+				      <td>&nbsp;<img src="../../link.gif" width="9" height="7"><a href="server/usecase.html" target="hoved" class="menyvalg" onMouseOver="velg('server_usecase')" onMouseOut="velg('blank')">Use Case</a><br>
+					      &nbsp;<img src="../../link.gif" width="9" height="7"><a href="server/glossary.html" target="hoved" class="menyvalg" onMouseOver="velg('server_glossary')" onMouseOut="velg('blank')">Glossary</a></td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+	   <!-- Menyelement slutt -->
+
+	   <!--Dette er et menyelement-->
+	   <tr><td valign="top">
+	   		<table bgcolor="#3870A8" cellpadding="1" cellspacing="0" border="0" width="100%"><tr><td>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td background="../../menybakgrunn.jpg" onMouseOver="velg('om_klient'), highlight('klient', 'on')" onMouseOut="velg('blank'), highlight('klient', 'off')">
+				<img src="../../pluss_off.gif" id="velger_klient" onClick="vis_skjul('klient')" alt="Klikk for å vise/skjule" width="14" height="9"><span class="meny">Klient</span>
+				</td>
+			</tr>
+			<tr id="skille_klient"><td height="1"></td></tr>
+			<tr bgcolor="#D1E1F1" id="under_klient">
+				      <td>&nbsp;<img src="../../link.gif" width="9" height="7"><a href="klient/usecase.html" target="hoved" class="menyvalg" onMouseOver="velg('klient_usecase')" onMouseOut="velg('blank')">Use Case</a></td>
+			</tr>
+			</table>
+			</td></tr></table>	   
+	   </td></tr>
+	   <!-- Menyelement slutt -->
+	   
+	   </table>
+	   <!-- Slutt på tabell med menyelementer -->
+
+</td></tr></table>	   
+
+		<br>	   
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#ffffff"><tr><td>
+
+		
+		<!--tool-tip-text-->
+		<table width="100%" border="0" cellspacing="0" cellpadding="3"><tr><td>
+			  <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="2"><tr><td>		
+					 <table width="100%" border="0" cellspacing="0" cellpadding="3">
+					 <tr>
+					 <td>
+						 <div class="underoverskrift">Menyforklaring</div>
+					 </td>
+					 </tr>							 
+					 <tr>
+					 <td valign="top" background="../../menybakgrunn.jpg" width="100%" height="100">
+						 <div id="forklaring" class="menyforklaring"></div>
+					 </td>
+					 </tr>
+					 </table>		
+			  </td></tr></table>
+		</td></tr></table>		
+		<!--tool-tip-text slutter her-->
+	   
+	   
+</td></tr></table>	   
+
+<br>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#ffffff"><tr><td>
+
+	   <!--Tilbake til hjemmeside-->
+	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+	   <tr>
+	   <td valign="top">
+	   	   <table width="100%" border="0" cellspacing="0" cellpadding="3">
+		   <tr>
+		   	   <td width="100%" bgcolor="#3870a8" align="center">
+                  <div class="tekst"><a href="http://home.online.no/%7Egusloek/index.html" target="_top">Eivind's 
+                    hjemmeside</a></div>
+                </td>
+	   	   </tr>
+	   	   </table>
+	   </td>
+	   </tr>
+	   </table>
+	   <!--Tilbake til hjemmeside slutt-->
+</td></tr></table>
+
+</body>
+</html>

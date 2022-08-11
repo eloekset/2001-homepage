@@ -1,0 +1,7 @@
+Kjempebra=8
+Meget bra=1
+Bra=3
+OK=7
+Relativt dårlig=1
+Elendig=2
+Ikke håp!=2

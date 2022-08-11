@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Ludo ;hvordan spillet er laget</title>
+	<link rel="STYLESHEET" href="../../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#3870a8" leftmargin="0" topmargin="0">
+
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff"><tr><td valign="top">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+	<!--Innhold starter her-->
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	<tr>
+		<td width="100%" bgcolor="#3870a8" align="center">
+                  <div class="overskrift">Ludo ;hvordan spillet er laget</div>
+                </td>
+	</tr>
+	</table>
+	
+	<img src="../../pixel.gif" width="1" height="5">
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="3">
+	          <tr> 
+                <td width="100%"> 
+                  <!--Teksten i dokumentet starter her-->
+                  <div class="ingress"> Spillet er laget med en to-lagsarkitektur. 
+                    Modellen, som du finner i pakken ludo.modell, er selve spillet. 
+                    Grensesnittet er et eget lag, og ligger i pakken ludo.grensesnitt. 
+                    Her kan du lese <a href="javadoc/index.html" target="_top">javadoc 
+                    til Ludo</a>.</div>
+                  &nbsp;<br>
+                  <div class="tekst"> De to hovedpakkene som spillet best&aring;r 
+                    av:<br>
+                    <img src="system.gif" width="436" height="212"> <br>
+                  </div>
+                  &nbsp;<br>
+                  <div class="tekst"> 
+                    <p>Du kan derfor lett erstatte alt i pakken ludo.grensesnitt 
+                      med dine egne java-klasser, og f&aring; et helt annet grensesnitt 
+                      basert p&aring; den samme modellen.<br>
+                      <br>
+                      Designklassediagram av modellen. Ludo er controller-klassen. 
+                      Klikk p&aring; bildet for st&oslash;rre visning.<br>
+                      <a href="designklassediagram.gif" target="_blank"><img src="designklassediagram_lite.gif" width="520" height="628" border="0"><br>
+                      </a>For &aring; bruke modellen m&aring; du i hovedsak bruke 
+                      f&oslash;lgende tre metoder fra klassen Ludo:<br>
+                      <a href="trill_terning.html">trillTerning()</a>, <a href="flytt_brikke.html">flyttBrikke(Flyttbart)</a> 
+                      og getBrett(). <br>
+                      getBrett()-metoden kan brukes for &aring; f&aring; tilstanden 
+                      til alle brikkene p&aring; brettet. getBrett() returnerer 
+                      en array av Flyttbart-objekter, som lagrer alle brikkene, 
+                      og hvilke ruter de forskjellige brikkene st&aring;r p&aring;.</p>
+                  </div>
+                  <!--Teksten i dokumentet slutter her-->
+                </td>
+	</tr>
+	</table>
+	
+	<!--Innhold slutter her-->
+</td>
+</tr></table>
+</td></tr>
+</table>
+
+</body>
+</html>

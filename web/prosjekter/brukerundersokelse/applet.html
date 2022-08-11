@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Brukerunders&oslash;kelse; endre utsende</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../formateringer.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0">
+<table width="100%" height="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="5">
+  <tr> 
+    <td valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top"> 
+            <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+              <tr> 
+                <td> 
+                  <div align="center" class="overskrift">Brukerunders&oslash;kelse; 
+                    endre utsende</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="5">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="3">
+              <tr>
+                <td>
+                  <p class="ingress">Her ser du hvordan du kan konfigurere appleten 
+                    til &aring; passe til din webside.</p>
+                  <p class="tekst">Utsende bestemmes av noen parametere som sendes 
+                    inn til appleten n&aring;r den starter. Parameterne skrives 
+                    i &lt;PARAM&gt;-tagger i resultat.php. I eksempelet p&aring; 
+                    denne sida, er parameterne som f&oslash;lger:</p>
+                  <p class="kode">&lt;PARAM name=&quot;BAKGRUNNSFARGE&quot; value=&quot;#3870a8&quot;&gt;<br>
+                    &lt;PARAM name=&quot;S&Oslash;YLEFARGE&quot; value=&quot;#d1e1f1&quot;&gt;<br>
+                    &lt;PARAM name=&quot;TITTELFARGE&quot; value=&quot;#60cf2f&quot;&gt;<br>
+                    &lt;PARAM name=&quot;MARG&quot; value=&quot;5&quot;&gt;<br>
+                    &lt;PARAM name=&quot;TITTELFONT&quot; value=&quot;Verdana&quot;&gt;<br>
+                    &lt;PARAM name=&quot;TITTELST&Oslash;RRELSE&quot; value=&quot;10&quot;&gt;<br>
+                    &lt;PARAM name=&quot;TITTELSTYLE&quot; value=&quot;BOLD&quot;&gt;<br>
+                    &lt;PARAM name=&quot;ALTERNATIVAVSTAND&quot; value=&quot;10&quot;&gt;<br>
+                    &lt;PARAM name=&quot;TEKSTS&Oslash;YLEAVSTAND&quot; value=&quot;3&quot;&gt;<br>
+                    &lt;PARAM name=&quot;S&Oslash;YLEH&Oslash;YDE&quot; value=&quot;7&quot;&gt;<br>
+                    &lt;PARAM name=&quot;3DEFFEKT&quot; value=&quot;true&quot;&gt;<br>
+                    &lt;PARAM name=&quot;VISANTALLSTEMMER&quot; value=&quot;true&quot;&gt;</p>
+                  <p class="tekst">Farge-parameterne er ganske selvf&oslash;lgelige.<br>
+                    <span class="kode">MARG</span> er avstanden fra appletens synlige omr&aring;de og inn 
+                    til tekst og s&oslash;yler fra alle kanter (i pixler). <br>
+                    <span class="kode">TITTELFONT</span> er skrifttypen som brukes. Det er viktig at du 
+                    skriver fontnavnet helt korrekt, hvis ikke velges en standard 
+                    font.<br>
+                    <span class="kode">TITTELST&Oslash;RRELSE</span> er st&oslash;rrelsen p&aring; skrifttypen 
+                    i antall pixler.<br>
+                    <span class="kode">TITTELSTYLE</span> kan v&aelig;re &quot;<span class="kode">PLAIN</span>&quot;, &quot;<span class="kode">BOLD</span>&quot; 
+                    eller &quot;<span class="kode">ITALIC</span>&quot;.<br>
+                    <span class="kode">ALTERNATIVAVSTAND</span> er avstanden mellom svaralternativene i 
+                    antall pixler.<br>
+                    <span class="kode">TEKSTS&Oslash;YLEAVSTAND</span> er avstanden fra tittelen p&aring; 
+                    svaralternativet til den tilh&oslash;rende s&oslash;ylen.<br>
+                    <span class="kode">S&Oslash;YLEH&Oslash;YDE</span> er selvf&oslash;lgelig h&oslash;yden 
+                    p&aring; s&oslash;ylene i antall pixler.<br>
+                    <span class="kode">3DEFFEKT</span> kan v&aelig;re &quot;true&quot; eller &quot;false&quot;. 
+                    N&aring;r denne er true, f&aring;r s&oslash;ylene en ramme 
+                    med lysere og m&oslash;rkere farger, som gir en viss 3D-effekt.<br>
+                    <span class="kode">VISANTALLSTEMMER</span> kan v&aelig;re &quot;true&quot; eller &quot;false&quot;. 
+                    Hvis den er false, vises ikke antall stemmer per alternativ, 
+                    og heller ikke de totalt antall stemmer som er gitt.</p>
+                  <p class="tekst">S&oslash;ylene endrer st&oslash;rrelse etter 
+                    bredden p&aring; appleten. Du kan selv bestemme hvor stor 
+                    appleten skal v&aelig;re, ved &aring; endre p&aring; f&oslash;lgende 
+                    linje:</p>
+                  <p class="kode">&lt;APPLET codebase=&quot;http://www.mo.himolde.no/~eivindg/br2/&quot; 
+                    class=&quot;ResultatApplet.class&quot; archive=&quot;http://www.mo.himolde.no/~eivindg/br2/brukerundersokelse.jar&quot; 
+                    <font color="#cf2f2f">width=220 height=280</font>&gt;</p>
+                  <p class="tekst">Disse endringene gj&oslash;res som sagt i resultat.php.</p>
+                  <p class="tekst">Det er ogs&aring; viktig at du <a href="adresser.html">setter 
+                    den riktige adressen</a> i samme fila.</p>
+                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></body>
+</html>

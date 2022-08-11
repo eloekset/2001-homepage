@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Use Case</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../../formateringer.css" type="text/css">
+
+<script language="javascript">
+	function loadFrameSet()
+	{
+		if(window.top == window.self)
+		{
+			window.top.location = "../index.html?side=klient/usecase1.html";
+		}
+	}
+</script>
+
+</head>
+
+<body onload="javascript:loadFrameSet();" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0">
+<table width="100%" height="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="5">
+  <tr> 
+    <td valign="top">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top"> 
+            <table width="100%" bgcolor="#3870a8" border="0" cellspacing="0" cellpadding="3">
+              <tr> 
+                <td> 
+                  <div align="center" class="overskrift">Use Case</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="5">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="3">
+              <tr>
+                <td> 
+                  <p class="ingress"><span lang=EN-GB><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Use 
+                    Case 1: Trille terning</font></span></p>
+                  <p class="tekst"><b>Pre-conditions:</b> Spiller har startet 
+                    ludospillet (dvs klienten er startet og logget p&aring; serveren).<br>
+                    <b>Post-conditions:</b> Ludoklienten viser hva resultatet 
+                    av kastet var og hvilke brikker som evt kan flyttes.<br>
+                    <b>Trigger:</b> Spiller triller terningen.<br>
+                    <b>Actor:</b> Spiller</p>
+                  <p class="tekst"><b>Normal hendelsesflyt: </b></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="1">
+                    <tr> 
+                      <td width="5%" class="tekst" valign="top">1.</td>
+                      <td width="95%" class="tekst">Spiller klikker på terningen.</td>
+                    </tr>
+                    <tr> 
+                      <td width="5%" class="tekst" valign="top">2.</td>
+                      <td width="95%" class="tekst">Systemet viser antall &oslash;yne 
+                        spilleren fikk p&aring; terningen.</td>
+                    </tr>
+                    <tr> 
+                      <td width="5%" class="tekst" valign="top">3.</td>
+                      <td width="95%" class="tekst">Systemet viser hvilke(n) brikke(r) 
+                        som kan flyttes, samt beskjed om at spilleren skal flytte 
+                        en brikke.</td>
+                    </tr>
+                  </table>
+                  <p class="tekst">&nbsp;</p>
+                  <p class="tekst"><b>Alternativ hendelsesflyt: </b></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="1">
+                    <tr> 
+                      <td width="5%" class="tekst" valign="top">3.a</td>
+                      <td width="95%" class="tekst">Ingen flytt var mulig.</td>
+                    </tr>
+                    <tr> 
+                      <td width="5%" class="tekst" valign="top">3.a.1</td>
+                      <td width="95%" class="tekst">Systemet viser beskjed om 
+                        at neste spiller skal trille terningen.</td>
+                    </tr>
+                  </table>
+                  <p class="tekst"><b> </b></p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table></body>
+</html>

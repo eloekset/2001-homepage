@@ -1,0 +1,46 @@
+<html>
+<script language="javascript">
+	// side er en attributt angitt i adressa
+	
+	function angiSide()
+	{
+		var side = getParameter(window.top.location.search, "?side");
+		if(side != null)
+		{
+			window.hoved.location.href = side;
+		}
+	}
+
+	function getParameter(queryString, parameterName) 
+	{
+		var parameterName = parameterName + "=";
+		if(queryString.length > 0) 
+		{
+			begin = queryString.indexOf(parameterName);
+			if(begin != -1) 
+			{
+				begin += parameterName.length;
+				end = queryString.indexOf("&" , begin);
+				if (end == -1) 
+				{
+					end = queryString.length
+				}
+				return unescape(queryString.substring(begin, end));
+			}
+			return "null";
+		}
+	}
+</script>
+<title>Nettbasert ludo</title>
+<frameset onload="javascript:angiSide();" rows="10,*,10" framespacing="0"> 
+  <frame name="topp" src="blank.html" frameborder="0" marginwidth="0" marginheight="0" noresize scrolling="no">
+  <frameset cols="200, *, 10"> 
+    <frame name="meny" src="meny.html" frameborder="0" marginwidth="0" marginheight="0" noresize scrolling="auto">
+    <frame name="hoved" src="hoved.html" frameborder="0" marginwidth="0" marginheight="0" noresize scrolling="auto">
+    <frame name="hoyre" src="blank.html" frameborder="0" marginwidth="0" marginheight="0" noresize scrolling="auto">
+  </frameset>
+  <frame name="bunn" src="blank.html" frameborder="0" marginwidth="0" marginheight="0" noresize scrolling="no">
+</frameset>
+<noframes> 
+</noframes> 
+</html>
